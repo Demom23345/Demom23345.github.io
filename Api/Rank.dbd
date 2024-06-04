@@ -17,5 +17,10 @@ $if[$getLeaderboardValue[globalUser;coin;asc;14;id]==$var[user]]14$endif
 $if[$getLeaderboardValue[globalUser;coin;asc;15;id]==$var[user]]15$endif
 $if[$getLeaderboardValue[globalUser;coin;asc;16;id]==$var[user]]16$endi
 $if[$getLeaderboardValue[globalUser;coin;asc;17;id]==$var[user]]17$endif
-
+$if[$getLeaderboardValue[globalUser;coin;asc;18;id]==$var[user]]18$endif
+$if[$getLeaderboardValue[globalUser;coin;asc;19;id]==$var[user]]19$endif
+$if[$getLeaderboardValue[globalUser;coin;asc;20;id]==$var[user]]20$endif
+$if[$getLeaderboardValue[globalUser;coin;asc;21;id]==$var[user]]21$endif
+$if[$getLeaderboardValue[globalUser;coin;asc;22;id]==$var[user]]22$endif
+$if[$getLeaderboardValue[globalUser;coin;asc;23;id]==$var[user]]23$endif
 ]
