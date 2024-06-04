@@ -1,1 +1,35 @@
 
+$nomention
+
+$c[ 👇 EDITÁVEL AQUI EM BAIXO ]
+
+$var[moeda;coin]
+$var[title;( 🎰 ) | Cassino › Apostas]
+$var[desc;> **{user}** você apostou **{valor}** e **{resultado}** **{valor}** veja o resultado abaixo:
+## ```{sequência}```]
+$var[emoji-1;🌽] $c[ {user} = usuário]
+$var[emoji-2;🍉] $c[ {valor} = valor apostado]
+$var[emoji-3;🍒] $c[ {resultado} = ganhou ou perdeu]
+$var[emoji-4;🍎] $c[ {sequência} = sequência de emojis]
+$var[espaço;   |   ] $c[ 👈 Essa var espaço serve para separar os emojis]
+$var[cor;#ffffff]
+
+$c[ 👆 ESITAVEL AQUI EM CIMA ]
+$c[  ©️ CRÉDITOS @demom0241 ]
+
+$var[user;$authorID] $var[resultado;$randomText[ganhou;perdeu]]
+$var[valor;$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message[1];.;;-1];,;;-1];k;000;-1];m;000000;-1];b;000000000;-1];K;000;-1];M;000000;-1];B;000000000;-1];all;$getVar[$var[moeda];$var[user]];-1];ALL;$getVar[$var[moeda];$var[user]];-1]]
+$var[sequência-ganhou;$randomText[$var[emoji-1]$var[espaço]$var[emoji-1]$var[espaço]$var[emoji-1];$var[emoji-2]$var[espaço]$var[emoji-2]$var[espaço]$var[emoji-2];$var[emoji-3]$var[espaço]$var[emoji-3]$var[espaço]$var[emoji-3];$var[emoji-4]$var[espaço]$var[emoji-4]$var[espaço]$var[emoji-4]]]
+$var[sequência-perdeu;$var[emoji-$random[1;2]]$var[espaço]$var[emoji-$random[1;4]]$var[espaço]$var[emoji-$random[3;4]]]
+
+$onlyIf[$var[valor]!=;**( ❌ ) |** <@$var[user]>, você se esqueceu de colocar um valor na aposta digite novamente.]
+$onlyIf[$isNumber[$var[valor]]==true;**( ❌ ) |** <@$var[user]>, você tem que apostar um valor valido por exemplo: **10k**, **1000**, **all** e **1.000**]
+$onlyIf[$getVar[$var[moeda];$var[user]]>=$var[valor];**( ❌ ) |** <@$var[user]>, você não tem toda essa quantidade de moedas para apostar.]
+$onlyIf[$getVar[$var[moeda];$var[user]]>=10;**( ❌ ) |** <@$var[user]>, você precisa apostar mais que **10 moedas** para apostar.]
+
+$title[$var[title]] $color[$var[cor]]
+$description[$replaceText[$replaceText[$replaceText[$replaceText[$var[desc];{user};$username;-1];{valor};$numberSeparator[$var[valor]];-1];{resultado};$var[resultado];-1];{sequência};$var[sequência-$var[resultado]];-1]]
+$thumbnail[$userAvatar[$var[user]]]
+
+$if[$var[resultado]==ganhou]$setVar[$var[moeda];$sum[$getVar[$var[moeda];$var[user]];$var[valor]];$var[user]]
+$elseif[$var[resultado]==perdeu]$setVar[$var[moeda];$sub[$getVar[$var[moeda];$var[user]];$var[valor]];$var[user]]$endif
