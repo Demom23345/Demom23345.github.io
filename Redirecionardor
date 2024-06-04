@@ -4,6 +4,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/
 $elseif[$or[$var[prefix]==bal;$var[prefix]==saldo;$var[prefix]==atm]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Economia/Bal.dbd
 
+$elseif[$or[$var[prefix]==userinfo;$var[prefix]==ui;$var[prefix]==infouser]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Userinfo.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
 
