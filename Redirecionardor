@@ -1,1 +1,3 @@
+$if[$var[prefix]==ping]
 
+$endif
