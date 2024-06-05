@@ -17,10 +17,10 @@ $elseif[$or[$var[prefix]==blackjack;$var[prefix]==bj]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Economia/Blackjack.dbd
 
 $elseif[$or[$var[prefix]==serverinfo;$var[prefix]==si;$var[prefix]==infoserver]==true]
-https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utitlidade/Serverinfo.dbd
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Serverinfo.dbd
 
 $elseif[$or[$var[prefix]==infobot;$var[prefix]==bi;$var[prefix]==botinfo]==true]
-https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utitlidade/Botinfo.dbd
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Botinfo.dbd
 
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
