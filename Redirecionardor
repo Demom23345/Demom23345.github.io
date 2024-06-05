@@ -13,6 +13,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Economia/S
 $elseif[$or[$var[prefix]==rank;$var[prefix]==top;$var[prefix]==tops]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Economia/Rank.dbd
 
+$elseif[$or[$var[prefix]==blackjack;$var[prefix]==bj]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Economia/Blackjack.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
 
