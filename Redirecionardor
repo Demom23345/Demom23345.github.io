@@ -18,6 +18,10 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Economia/B
 
 $elseif[$or[$var[prefix]==serverinfo;$var[prefix]==si;$var[prefix]==infoserver]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utitlida/Serverinfo.dbd
+
+$elseif[$or[$var[prefix]==infobot;$var[prefix]==bi;$var[prefix]==botinfo]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utitlida/Botinfo.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
 
