@@ -17,7 +17,7 @@ $var[sequência-perdeu;$var[emoji-$random[1;2]]$var[espaço]$var[emoji-$random[1
 $onlyIf[$var[valor]!=;**$json[EMOJI;errado] |** <@$var[user]>, você se esqueceu de colocar um valor na aposta digite novamente.]
 $onlyIf[$isNumber[$var[valor]]==true;**$json[EMOJI;errado] |** <@$var[user]>, você tem que apostar um valor valido por exemplo: **10k**, **1000**, **all** e **1.000**]
 $onlyIf[$getVar[$var[moeda];$var[user]]>=$var[valor];**$json[EMOJI;errado] |** <@$var[user]>, você não tem toda essa quantidade de moedas para apostar.]
-$onlyIf[$getVar[$var[moeda];$var[user]]>=10;**$json[EMOJI;errado] |** <@$var[user]>, você precisa apostar mais que **10 moedas** para apostar.]
+$onlyIf[$var[valor]>=10;**$json[EMOJI;errado] |** <@$var[user]>, você precisa apostar mais que **10 moedas** para apostar.]
 
 $title[$var[title]] $color[$var[cor]]
 $description[$replaceText[$replaceText[$replaceText[$replaceText[$var[desc];{user};$username;-1];{valor};$numberSeparator[$var[valor]];-1];{resultado};$var[resultado];-1];{sequência};$var[sequência-$var[resultado]];-1]]
