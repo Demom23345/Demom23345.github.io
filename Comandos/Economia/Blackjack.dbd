@@ -1,5 +1,8 @@
 $var[moeda;coin]
 
+$jsonParse[{ "CARTAS": {
+
+}}]
 $var[0;<:carta_00:1247712680966492241>]
 $var[1;$randomText[<:carta_as_copas:1247717405325529088>;<:carta_as_espadas:1247720523564187718>;<:carta_as_ouros:1247719794258481183>;<:carta_as_pools:1247718744302686289>]]
 $var[2;$randomText[<:carta_2_copas:1247717377177555024>;<:carta_2_espadas:1247720499736350791>;<:carta_2_ouros:1247719765225771048>;<:carta_2_pools:1247718716079345765>]]
