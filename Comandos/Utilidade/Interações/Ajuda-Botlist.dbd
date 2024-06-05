@@ -3,3 +3,4 @@ $description[
 > **╭** **addbot**
 > **├** Alternativos: `ab`, `pab`
 > **╰** Envia o painel de addbot ( adicionar bot ) no canal.]
+$thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
