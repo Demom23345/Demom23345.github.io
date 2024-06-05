@@ -24,3 +24,6 @@ $author[$username] $authorAvatar
 $title[BlackJack]
 $addField[Você - $getUserVar[coin;$authorID];$var[$random[1;13]]$random[1;13];yes]
 $addField[Dealer - 3 + ?;$var[$random[1;13]]$var[0];yes]
+
+$newSelectMenu[menu;1;1;Faça sua escolha]
+$addSelectMenuOption[menu;Comprar Carta;1-$authorID;;no;]
