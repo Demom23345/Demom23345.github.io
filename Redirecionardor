@@ -22,6 +22,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/
 $elseif[$or[$var[prefix]==infobot;$var[prefix]==bi;$var[prefix]==botinfo]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Botinfo.dbd
 
+$elseif[$or[$var[prefix]==useravatar;$var[prefix]==ava;$var[prefix]==avatar]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Avatar.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
 
