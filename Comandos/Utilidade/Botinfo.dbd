@@ -7,5 +7,5 @@ $addField[Repositório;> [Quazar-bot\](https://github.com/Demom23345/Quazar-bot/
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
 
 
-$addButton[no;site;Minhas Diretrizes;link;yes;]
-$addButton[no;sitse;Meu Servidor de Suporte;link;yes;]
+$addButton[no;https://google.com;Minhas Diretrizes;link;yes;]
+$addButton[no;$json[BOT;server];Meu Servidor de Suporte;link;no;]
