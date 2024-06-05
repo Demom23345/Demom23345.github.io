@@ -13,3 +13,7 @@ $var[11;$randomText[<:carta_j_copas:1247717408819380295>;<:carta_j_ouros:1247719
 $var[12;$randomText[<:carta_q_copas:1247717414888538182>;<:carta_q_ouros:1247719804941369445>;<:carta_q_pools:1247718754624864338>
 $var[13;$randomText[<:carta_k_copas:1247717411554201751>;<:carta_k_ouros:1247719801317625989>;<:carta_k_pools:1247718751722278922>]]
 
+$author[$username] $authorAvatar
+$title[BlackJack]
+$addField[Você - $getUserVar[coin;$authorID];$var[$random[1;13]$random[1;13]];yes]
+$addField[Dealer - 3 + ?;$var[$random[1;13]$var[0];yes]
