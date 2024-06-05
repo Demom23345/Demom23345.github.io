@@ -1,7 +1,6 @@
 $var[user;$findUser[$message[2]]]
 
-$title[Avatar de Usuário;1]
-$description[> Avatar do usuário <@$authorID>;1]
+$description[> **Avatar do usuário** <@$authorID>;1]
 $image[$userAvatar[$var[user]]?size=4096;2]
 $addButton[no;$userAvatar[$var[user]]?size=4096;Baixar Imagem;link;no]
 $color[$json[BOT;cor];2]
