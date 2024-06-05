@@ -1,1 +1,6 @@
-$title[$serverName[$guildID]]
+$var[server;$guildID]
+
+$title[$serverName[$var[server]]]
+$addField[$json[EMOJI;id] ID;$var[server];yes]
+$addField[$json[EMOJI;shard] ShardID;$shardID[$var[server]];yes]
+$addField[$json[EMOJI;coroa] Dono;`$username[$serverOwner[$var[server]]] $serverOwner[$var[server]]`;yes]
