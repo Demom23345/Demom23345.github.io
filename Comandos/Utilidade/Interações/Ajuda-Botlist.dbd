@@ -1,2 +1,5 @@
-$title[teste]
-$description[>>> **Q?addbot** | ]
+$title[$json[EMOJI;bot] | Comandos Botlist]
+$description[
+> **╭** **addbot**
+> **├** Alternativos: `ab`, `pab`
+> **╰** Envia o painel de addbot ( adicionar bot ) no canal.]
