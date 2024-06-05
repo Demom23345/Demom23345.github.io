@@ -1,9 +1,9 @@
 $title[$json[EMOJI;bot] | Comandos Botlist]
 $description[
-> **╭⎯⎯⎯** **addbot**
+> **╭───** **addbot**
 > **├** Alternativos: `ab`, `pab`
 > **╰** Envia o painel de addbot ( adicionar bot ) no canal.
-> **╭⎯⎯⎯** **perfil**
+> **╭───** **perfil**
 > **├** Alternativos: `profile`, `p`
 > **╰** Veja o perfil de um bot no servidor ou de um desenvolvedor.]
 $footer[Meu prefixo atualmente é Q? | $addTimestamp]
