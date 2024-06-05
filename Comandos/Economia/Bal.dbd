@@ -1,3 +1,3 @@
 $var[user;$findUser[$message[2]]]
 
-$json[EMOJI;coin] **|** <@$authorID>, $if[$var[user]==$authorID] você tem$else o usuário <@$var[user]> ( $var[user] ) tem$endif **$numberSeparator[$getVar[coin;$var[user]]] quazcoins** na carteira e$if[$var[user]==$authorID] você $else ele(a)$endif está em **#$if[$or[$var[rank-coin]==;$var[rank-coin]==0]==false]100+$else$var[rank-top]$endif** no ranking dos mais ricos, você pode ver o ranking das pessoas mais ricas utilizando o comando `Q?rank coin`.
+$json[EMOJI;coin] **|** <@$authorID>, $if[$var[user]==$authorID] você tem$else o usuário <@$var[user]> ( $var[user] ) tem$endif **$numberSeparator[$getVar[coin;$var[user]]] quazcoins** na carteira e$if[$var[user]==$authorID] você $else ele(a)$endif está em **#$if[$or[$var[rank-coin]==;$var[rank-coin]==0]==false]100+$else$var[rank-coin]$endif** no ranking dos mais ricos, você pode ver o ranking das pessoas mais ricas utilizando o comando `Q?rank coin`.
