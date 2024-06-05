@@ -22,9 +22,8 @@ $onlyIf[$isNumber[$var[valor]]==true;**$json[EMOJI;errado] |** <@$var[user]>, vo
 $onlyIf[$getVar[$var[moeda];$var[user]]>=$var[valor];**$json[EMOJI;errado] |** <@$var[user]>, você não tem toda essa quantidade de moedas para apostar.]
 $onlyIf[$getVar[$var[moeda];$var[user]]>=10;**$json[EMOJI;errado] |** <@$var[user]>, você precisa apostar mais que **10 moedas** para apostar.]
 
-$author[$username] $authorAvatar
-$title[BlackJack]
-$addField[Você - $getUserVar[coin;$authorID];$var[$random[1;13]]$random[1;13];yes]
+$author[$username] $authorAvatar $title[BlackJack]
+$addField[Você - $getUserVar[coin;$authorID];$var[$random[1;13]]$var[$random[1;13]];yes]
 $addField[Dealer - 3 + ?;$var[$random[1;13]]$var[0];yes]
 
 $newSelectMenu[menu;1;1;Faça sua escolha]
