@@ -8,4 +8,4 @@ $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
 
 
 $addButton[no;site;Minhas Diretrizes;link;yes;]
-$addButton[no;site;Meu Servidor de Suporte;link;yes;]
+$addButton[no;sitse;Meu Servidor de Suporte;link;yes;]
