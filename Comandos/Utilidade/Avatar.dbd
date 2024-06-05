@@ -1,0 +1,5 @@
+$var[user;$findUser[$message[2]]]
+
+$title[Avatar de Usuário]
+$image[$userAvatar[$var[user]]]
+$addButton[no;$userAvatar[$var[user]];Baixar Imagem;link;no]
