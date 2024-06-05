@@ -1,3 +1,3 @@
-$if[$message==botlist]
-
+$if[$message==botlist-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Botlist.dbd
 $endif
