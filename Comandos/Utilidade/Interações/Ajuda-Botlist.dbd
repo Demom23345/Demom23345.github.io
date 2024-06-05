@@ -2,5 +2,8 @@ $title[$json[EMOJI;bot] | Comandos Botlist]
 $description[
 > **╭** **addbot**
 > **├** Alternativos: `ab`, `pab`
-> **╰** Envia o painel de addbot ( adicionar bot ) no canal.]
+> **╰** Envia o painel de addbot ( adicionar bot ) no canal.
+> **╭** **perfil**
+> **├** Alternativos: `preofile`, `p`
+> **╰** Veja o perfil de um bot no servidor ou de um desenvolvedor.]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
