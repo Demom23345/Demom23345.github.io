@@ -1,16 +1,16 @@
-$if[$customID==botlist-$authorID]
+$if[$message==botlist-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Botlist.dbd
 
-$elseif[$customID==economia-$authorID]
+$elseif[$message==economia-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Economia.dbd
 
-$elseif[$customID==diversão-$authorID]
+$elseif[$message==diversão-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Diversão.dbd
 
-$elseif[$customID==moderação-$authorID]
+$elseif[$message==moderação-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Moderação.dbd
 
-$elseif[$customID==utilidade-$authorID]
+$elseif[$message==utilidade-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Utilidade.dbd
 
 $else
