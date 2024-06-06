@@ -1,1 +1,11 @@
 
+$title[$json[EMOJI;coin] | Comandos Economia]
+$description[
+> **╭───** **bal**
+> **├** Alternativos: `atm`, `saldo`
+> **╰** Veja o saldo de quazcoins de um usuário.
+> **╭───** **slot**
+> **├** Alternativos: `slots`, `bet`
+> **╰** Aposte quazcoins e tenha chance de duplicar eles.]
+$footer[Meu prefixo atualmente é Q? $addTimestamp]
+$thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
