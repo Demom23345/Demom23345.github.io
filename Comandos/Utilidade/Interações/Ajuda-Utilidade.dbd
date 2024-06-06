@@ -1,1 +1,20 @@
 
+$title[$json[EMOJI;utilidade] | Comandos Utilidade]
+$description[
+> **╭───** **userinfo**
+> **├** Alternativos: `infouser`, `ui`
+> **╰** Veja informações sobre um usuário.
+> **╭───** **avatar**
+> **├** Alternativos: `useravatar`, `ava`
+> **╰** Veja o avatar de um usuário com mais alta qualidade.
+> **╭───** **serverinfo**
+> **├** Alternativos: `infoserver`, `si`
+> **╰** Veja informações sobre um servidor.
+> **╭───** **ping**
+> **├** Alternativos: `pong`, `node`
+> **╰** Veja minha latência dentre outros.
+> **╭───** **botinfo**
+> **├** Alternativos: `infobot`, `bi`
+> **╰** Veja mais infomações sobre mim.]
+$footer[Meu prefixo atualmente é Q? $addTimestamp]
+$thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
