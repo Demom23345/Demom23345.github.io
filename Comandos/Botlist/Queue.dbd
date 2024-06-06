@@ -2,12 +2,12 @@ $onlyIf[$guildID!=;**$json[EMOJI;errado] |** <@$authorID>, é impossível utiliz
 $onlyIf[$or[$hasRole[$authorID;$getServerVar[cargo-analisadores]]==true;$serverOwner==$authorID]==true;**$json[EMOJI;errado~] |** <@$authorID>, você não tem permissão de utilizar esse comando apenas a equipe da staff pode!]
 
 $description[# Queue
-$if[$getServerVar[1q]!=]`(` **1** `)` $getServerVar[1q]$endif
-$if[$getServerVar[2q]!=]`(` **2** `)` $getServerVar[2q]$endif
-$if[$getServerVar[3q]!=]`(` **3** `)` $getServerVar[3q]$endif
-$if[$getServerVar[4q]!=]`(` **4** `)` $getServerVar[4q]$endif
-$if[$getServerVar[5q]!=]`(` **5** `)` $getServerVar[5q]$endif
-$if[$getServerVar[6q]!=]`(` **6** `)` $getServerVar[6q]$endif]
+$if[$getServerVar[1q]!=]`( 1 )` $getServerVar[1q]$endif
+$if[$getServerVar[2q]!=]`( 2 )` $getServerVar[2q]$endif
+$if[$getServerVar[3q]!=]`( 3 )` $getServerVar[3q]$endif
+$if[$getServerVar[4q]!=]`( 4 )` $getServerVar[4q]$endif
+$if[$getServerVar[5q]!=]`( 5 )` $getServerVar[5q]$endif
+$if[$getServerVar[6q]!=]`( 6 )` $getServerVar[6q]$endif]
 $footer[Verificador: $username $addTimestamp]
 $footerIcon[$authorAvatar]
 $color[$json[BOT;cor]]
