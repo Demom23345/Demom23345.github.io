@@ -31,6 +31,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/
 $elseif[$or[$var[prefix]==addbot;$var[prefix]==pab;$var[prefix]==ab]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Addbot.dbd
 
+$elseif[$or[$var[prefix]==configbot;$var[prefix]==botconfig;$var[prefix]==gerenciar]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Moderação/Botconfig.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
 
