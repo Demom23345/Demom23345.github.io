@@ -18,3 +18,6 @@ $description[
 > **╰** Veja mais infomações sobre mim.]
 $footer[Meu prefixo atualmente é Q? $addTimestamp]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
+
+$addButton[no;help-voltar-utilidade-$authorID;;secondary;yes;$json[EMOJI;voltar]]
+$addButton[no;help-proximo-utilidade-$authorID;;secondary;no;$json[EMOJI;proximo]]
