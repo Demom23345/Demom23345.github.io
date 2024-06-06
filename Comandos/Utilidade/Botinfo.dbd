@@ -6,6 +6,6 @@ $addField[Recursos;> [Github.com\](https://github.com) | [Developer Portal\](htt
 $addField[Repositório;> [Quazar-bot\](https://github.com/Demom23345/Quazar-bot/tree/main);yes]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
 
-
-$addButton[no;https://google.com;Minhas Diretrizes;link;yes;]
-$addButton[no;$json[BOT;server];Meu Servidor de Suporte;link;no;]
+$addButton[no;$getBotInvite;Me Adicione;link;no;]
+$addButton[no;https://google.com;Meu Site;link;yes;]
+$addButton[no;$json[BOT;server];Servidor de Suporte;link;no;]
