@@ -1,0 +1,23 @@
+$onlyIf[$or[$hasRole[$authorID;$getServerVar[cargo-analisadores]]==true;$serverOwner==$authorID]==true;**$json[EMOJI;errado] |** <@$authorID>, você não tem permissão de utilizar esse comando apenas a equipe da staff pode!]
+$onlyIf[$mentioned[1;yes]!=$authorID;**$json[EMOJI;errado] |** <@$authorID>, mencione um bot que está na lista de espera!]
+$onlyIf[$getVar[wait;$mentioned[1]]==true;**$json[EMOJI;errado] |** <@$authorID>, esse bot não está na lista de espera.]
+$onlyIf[$getVar[dono;$mentioned[1]]!=$authorID;**$json[EMOJI;errado] |** <@$authorID> você não pode analisar seu próprio bot!]
+
+$setVar[mention;$mentioned[1];$authorID]
+
+$title[( <:bots:1245821414397972511> ) | Análise do Bot]
+$description[**Informações do Bot**
+> **├** ( 🆔 ) ID: **$mentioned[1]**
+> **├** ( 📝 ) Prefixo: **$getVar[prefix;$mentioned[1]]**
+> **├** ( 💻 ) Linguagem: **$getVar[lang;$mentioned[1]]**
+> **├** ( 📅 ) Data de Criação: **$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$mentioned[1];Monday, dia 2 De January De 2006, às 3:04];January;Janeiro;-1];February;Fevereiro;-1];March;Março;-1];April;Abril;-1];May;Maio;-1];June;Junho;-1];July;Julho;-1];August;Agosto;-1];September;Setembro;-1];October;Outubro;-1];November;Novembro;-1];December;Dezembro;-1];Monday;Segunda-feira;-1];Tuesday;Terça-feira;-1];Wednesday;Quarta-feira;-1];Thursday;Quinta-feira;-1];Friday;Sexta-feira;-1];Saturday;Sábado;-1];Sunday;Domingo;-1]**
+> **╰** ( 📜 ) Descrição: **$getVar[desc;$mentioned[1]]**
+**Informações do Desenvolvedor**
+> **├** ( 🆔 ) ID: **$getVar[dono;$mentioned[1]]**
+> **╰** ( 📅 ) Data de Criação: **$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$getVar[dono;$mentioned[1]];Monday, dia 2 De January De 2006, às 3:04];January;Janeiro;-1];February;Fevereiro;-1];March;Março;-1];April;Abril;-1];May;Maio;-1];June;Junho;-1];July;Julho;-1];August;Agosto;-1];September;Setembro;-1];October;Outubro;-1];November;Novembro;-1];December;Dezembro;-1];Monday;Segunda-feira;-1];Tuesday;Terça-feira;-1];Wednesday;Quarta-feira;-1];Thursday;Quinta-feira;-1];Friday;Sexta-feira;-1];Saturday;Sábado;-1];Sunday;Domingo;-1]**
+
+**` • `** Envie ***Aprovar*** ou ***Reprovar*** para enviar a análise do bot!]
+$thumbnail[$userAvatar[$mentioned[1]]]
+$color[$getVar[cor-geral]]
+
+$awaitFunc[an;$authorID;$channelID]
