@@ -3,7 +3,6 @@ $onlyIf[$getServerVar[canal-addbot]==$channelID;$json[EMOJI;errado] **|** Este c
 $onlyBotPerms[sendmessages;managemessages;$json[EMOJI;errado] **|** <@$authorID>, não possuo permissão de gerenciar mensagens e enviar mensagens para continuar o processo.]
 
 
-$json[EMOJI;certo] **|** <@$authorID>, utilize o botão abaixo para adicionar seu bot!
-$addButton[no;addbot-$authorID;Adicionar Bot;success;no;$json[EMOJI;add]]
-
-$deleteIn[10s]
+$description[# Adicionar Bot
+>>> Venha adicionar seu bot aqui no servidor, user o botao abaixo para preencher o formulário addbot.]
+$addButton[no;addbot;Adicionar Bot;success;no;$json[EMOJI;add]]
