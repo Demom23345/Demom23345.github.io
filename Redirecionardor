@@ -1,4 +1,4 @@
-$if[$var[prefix]==ping]
+$if[$or[$var[prefix]==ping;$var[prefix]==pong;$var[prefix]==node]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Ping.dbd
 
 $elseif[$or[$var[prefix]==bal;$var[prefix]==saldo;$var[prefix]==atm]==true]
@@ -33,6 +33,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Ad
 
 $elseif[$or[$var[prefix]==configbot;$var[prefix]==botconfig;$var[prefix]==gerenciar]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Moderação/Botconfig.dbd
+
+$elseif[$or[$var[prefix]==queue;$var[prefix]==q]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Queue.dbd
 
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
