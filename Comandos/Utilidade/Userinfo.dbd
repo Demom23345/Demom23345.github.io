@@ -1,6 +1,7 @@
 $var[user;$findUser[$message[2]]]
 
 $author[Informações de usuário] $authorIcon[$userAvatar[$var[user]]]
+$description[# $username[$var[user]]
 $addField[$json[EMOJI;message] Informações da conta;
 > $json[EMOJI;seta] ID: ``$var[user]``
 > $json[EMOJI;seta] Tag: ``$username[$var[user]]``
