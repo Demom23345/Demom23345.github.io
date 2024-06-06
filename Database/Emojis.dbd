@@ -9,7 +9,9 @@ $jsonParse[{
   "bot": "<:bot:1248015925748306004>",
   "add": "<:adicionar:1248106163954913351>",
   "home": "<:casa:1248107127667429449>",
-  "user": "<:doutilizador:1248107339337306162>"
+  "user": "<:doutilizador:1248107339337306162>",
+  "voltar": "⬅️",
+  "proximo": "➡️"
 },
 "BOT": {
   "cor": "#b41ee6",
