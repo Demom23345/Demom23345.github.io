@@ -1,0 +1,10 @@
+$title[$json[EMOJI;festa] | Comandos Diversão]
+$description[
+> **╭───** **kiss**
+> **├** Alternativos: `beijo`, `beijar`
+> **╰** Mande um beijo para um outro usuário.
+> **╭───** **hug**
+> **├** Alternativos: `abraço`, `abraçar`
+> **╰** Abrace um usuário para deixa-lo(a) feliz.]
+$footer[Meu prefixo atualmente é Q? $addTimestamp]
+$thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
