@@ -14,17 +14,16 @@ $json[EMOJI;certo] | $nickname Seu Bot Foi Enviado;;
 
 $sendEmbedMessage[$var[canal-logs];||<@&$var[cargo-analista]>||;
 $json[EMOJI;bot] | $nickname Enviou um Bot;;
-**Informações do Bot**
-> **├** ( $json[EMOJI;id] ) ID: **$input[id]**
-> **├** ( $json[EMOJI;prefix] ) Prefixo: **$input[prefix]**
-> **├** ( $json[EMOJI;lang] ) Linguagem: **$input[lang]**
-> **├** ( $json[EMOJI;date] ) Data de Criação: **$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$input[id];Monday, dia 2 De January De 2006, às 3:04];January;Janeiro;-1];February;Fevereiro;-1];March;Março;-1];April;Abril;-1];May;Maio;-1];June;Junho;-1];July;Julho;-1];August;Agosto;-1];September;Setembro;-1];October;Outubro;-1];November;Novembro;-1];December;Dezembro;-1];Monday;Segunda-feira;-1];Tuesday;Terça-feira;-1];Wednesday;Quarta-feira;-1];Thursday;Quinta-feira;-1];Friday;Sexta-feira;-1];Saturday;Sábado;-1];Sunday;Domingo;-1]**
-> **╰** ( $json[EMOJI;desc] ) Descrição: **$input[desc]**
-**Informações do Desenvolvedor**
-> **├** ( $json[EMOJI;id] ) ID: **$authorID**
-> **╰** ( $json[EMOJI;date] ) Data de Criação: **$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$authorID;Monday, dia 2 De January De 2006, às 3:04];January;Janeiro;-1];February;Fevereiro;-1];March;Março;-1];April;Abril;-1];May;Maio;-1];June;Junho;-1];July;Julho;-1];August;Agosto;-1];September;Setembro;-1];October;Outubro;-1];November;Novembro;-1];December;Dezembro;-1];Monday;Segunda-feira;-1];Tuesday;Terça-feira;-1];Wednesday;Quarta-feira;-1];Thursday;Quinta-feira;-1];Friday;Sexta-feira;-1];Saturday;Sábado;-1];Sunday;Domingo;-1]**
-
-**`•`** Bot adicionado a **queue** com sucesso!;$json[BOT;cor];;;$username | $authorID;$authorAvatar;$userAvatar[$input[id]];;yes;no]
+$json[EMOJI;bot] **Informações do Bot**
+> $json[EMOJI;id] ID: ``$input[id]``
+> $json[EMOJI;prefix] Prefixo: ``$input[prefix]``
+> $json[EMOJI;lang] Linguagem: ``$input[lang]``
+> $json[EMOJI;date] Data de Criação: ``$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$input[id];Monday, dia 2 De January De 2006, às 3:04];January;Janeiro;-1];February;Fevereiro;-1];March;Março;-1];April;Abril;-1];May;Maio;-1];June;Junho;-1];July;Julho;-1];August;Agosto;-1];September;Setembro;-1];October;Outubro;-1];November;Novembro;-1];December;Dezembro;-1];Monday;Segunda-feira;-1];Tuesday;Terça-feira;-1];Wednesday;Quarta-feira;-1];Thursday;Quinta-feira;-1];Friday;Sexta-feira;-1];Saturday;Sábado;-1];Sunday;Domingo;-1]``
+> $json[EMOJI;desc] Descrição: ``$input[desc]``
+$json[EMOJI;dev] **Informações do Desenvolvedor**
+> $json[EMOJI;id] ID: ``$authorID``
+> $json[EMOJI;date]: Data de Criação: ``$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$authorID;Monday, dia 2 De January De 2006, às 3:04];January;Janeiro;-1];February;Fevereiro;-1];March;Março;-1];April;Abril;-1];May;Maio;-1];June;Junho;-1];July;Julho;-1];August;Agosto;-1];September;Setembro;-1];October;Outubro;-1];November;Novembro;-1];December;Dezembro;-1];Monday;Segunda-feira;-1];Tuesday;Terça-feira;-1];Wednesday;Quarta-feira;-1];Thursday;Quinta-feira;-1];Friday;Sexta-feira;-1];Saturday;Sábado;-1];Sunday;Domingo;-1]``
+;$json[BOT;cor];;;$username | $authorID;$authorAvatar;$userAvatar[$input[id]];;yes;no]
 
 $setVar[limit;$sum[$getVar[limit;$authorID];1];$authorID]
 $setVar[wait;true;$authorID]
