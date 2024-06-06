@@ -10,5 +10,6 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/
 $elseif[$customID==helpvoltarutilidade-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Utilidade.dbd
 
+$else
 
 $endif
