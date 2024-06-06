@@ -3,4 +3,5 @@ $onlyIf[$getServerVar[canal-addbot]==$channelID;$json[EMOJI;errado] **|** Este c
 
 $json[EMOJI;certo] **|** <@$authorID>, utilize o botão abaixo para adicionar seu bot!
 
+
 $deleteIn[10s]
