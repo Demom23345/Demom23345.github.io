@@ -4,4 +4,7 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/In
 $elseif[$customID==botadd]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Intera%C3%A7%C3%B5es/Logs-addbot.dbd
 
+$elseif[$customID==helpproximoutilidade-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-utilidade-2.dbd
+
 $endif
