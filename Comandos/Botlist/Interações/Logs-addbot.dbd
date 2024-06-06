@@ -2,6 +2,7 @@
 $ephemeral
 $onlyIf[$userExists[$input[id]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot (`$input[id]`) não existe ou não é um bot envie novamente.]
 $onlyIf[$isBot[$input[id]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot (`$input[id]`) não existe ou não é um bot envie novamente.]
+$onlyIf[$getVar[limit;$authorID]>=$getServerVar[limite];**$json[EMOJI;errado] |** <@$authorID>, você já alcançou o limite de bot permitido no servidor.]
 
 $var[canal-correios;$getServerVar[canal-correios]]
 $var[canal-logs;$getServerVar[canal-logs-botlist]]
@@ -9,7 +10,7 @@ $var[cargo-analista;$getServerVar[cargo-analisadores]]
 
 $sendEmbedMessage[$var[canal-correios];<@$authorID>;
 $json[EMOJI;certo] | $nickname Seu Bot Foi Enviado;;
->>> Bot **$username[$input[id]]#$discriminator[$input[id]]** enviado com sucesso para análise! Aguarde os `verificadores` analisarem seu bot;$json[BOT;cor];;;$username | $authorID;$authorAvatar;$userAvatar[$input[id]];;yes;no]
+>>> O bot **$username[$input[id]]#$discriminator[$input[id]]** enviado com sucesso para análise! Aguarde os `verificadores` analisarem seu bot;$json[BOT;cor];;;$username | $authorID;$authorAvatar;$userAvatar[$input[id]];;yes;no]
 
 $sendEmbedMessage[$var[canal-logs];||<@&$var[cargo-analista]>||;
 $json[EMOJI;bot] | $nickname Enviou um Bot;;
