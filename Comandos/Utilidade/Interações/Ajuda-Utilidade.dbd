@@ -1,5 +1,5 @@
 
-$title[$json[EMOJI;utilidade] | Comandos Utilidade]
+$title[$json[EMOJI;utilidade] | Comandos Utilidade] $removeButtons
 $description[
 > **╭───** **userinfo**
 > **├** Alternativos: `infouser`, `ui`
