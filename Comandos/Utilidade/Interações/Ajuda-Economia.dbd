@@ -1,5 +1,5 @@
 
-$title[$json[EMOJI;coin] | Comandos Economia]
+$title[$json[EMOJI;coin] | Comandos Economia] $removeButtons
 $description[
 > **╭───** **bal**
 > **├** Alternativos: `atm`, `saldo`
