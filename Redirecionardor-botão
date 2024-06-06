@@ -1,4 +1,7 @@
 $if[$customID==addbot]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Intera%C3%A7%C3%B5es/Formul%C3%A1rio-addbot.dbd
 
+$elseif[$customID==botadd]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Intera%C3%A7%C3%B5es/Logs-addbot.dbd
+
 $endif
