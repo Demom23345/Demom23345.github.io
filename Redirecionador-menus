@@ -4,7 +4,16 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/
 $elseif[$message==economia-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Economia.dbd
 
-$else $ephemeral
-$json[EMOJI;errado] **|** <@$authorID>, você não pode interagir com interações que não sejam suas.
+$elseif[$message==diversão-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Diverão.dbd
+
+$elseif[$message==moderação-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Moderação.dbd
+
+$elseif[$message==utilidade-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Utilidade.dbd
+
+$else
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Não-interação.dbd
 
 $endif
