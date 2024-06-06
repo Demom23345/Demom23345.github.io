@@ -7,11 +7,11 @@ $setVar[mention;$mentioned[1];$authorID]
 
 $description[# Enivar Analise
 >>> User os botões abaixo para enviar a analise do bot **$username[$mentioned[1]]#$discriminator[$mentioned[1]]**]
-$footer[Verificador: $username $addTimestamp]
+$footer[Verificador: $username $addTimestamp] $footerIcon[$authorAvatar]
 $thumbnail[$userAvatar[$mentioned[1]]]
 $color[$json[BOT;cor]]
 
 $addButton[no;botaprovar-$authorID;Aprovar;success;no;$json[EMOJI;certo]]
 $addButton[no;botreprovar-$authorID;Reprovar;danger;no;$json[EMOJI;errado]]
-$addButton[no;botcancelar-$authorID;Aprovar;secondary;no;$json[EMOJI;cancelar]]
+$addButton[no;botcancelar-$authorID;Cancelar;secondary;no;$json[EMOJI;cancelar]]
 
