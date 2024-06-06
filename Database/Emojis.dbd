@@ -15,7 +15,8 @@ $jsonParse[{
   "utilidade": "<:utilidade:1248236205699760251>",
   "raio": "<:diversao:1248235723795202170>",
   "economia": "<:economia:1248235743814352896>",
-  "moderação": "<:mod:1248235705088348200>"
+  "moderação": "<:mod:1248235705088348200>",
+  "seta": "<:seta:1248243460469817395>"
 },
 "BOT": {
   "cor": "#b41ee6",
