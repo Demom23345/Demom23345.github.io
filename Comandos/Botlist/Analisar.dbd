@@ -10,3 +10,8 @@ $description[# Enivar Analise
 $footer[Verificador: $username $addTimestamp]
 $thumbnail[$userAvatar[$mentioned[1]]]
 $color[$json[BOT;cor]]
+
+$addButton[no;botaprovar-$authorID;Aprovar;success;no;$json[EMOJI;certo]]
+$addButton[no;botreprovar-$authorID;Reprovar;danger;no;$json[EMOJI;errado]]
+$addButton[no;botcancelar-$authorID;Aprovar;secondary;no;$json[EMOJI;cancelar]]
+
