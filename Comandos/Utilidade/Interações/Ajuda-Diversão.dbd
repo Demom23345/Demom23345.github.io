@@ -1,4 +1,4 @@
-$title[$json[EMOJI;festa] | Comandos Diversão]
+$title[$json[EMOJI;festa] | Comandos Diversão] $removeButtons
 $description[
 > **╭───** **kiss**
 > **├** Alternativos: `beijo`, `beijar`
