@@ -10,6 +10,21 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/
 $elseif[$customID==helpvoltarutilidade-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Utilidade.dbd
 
+$elseif[$message==botlist-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Botlist.dbd
+
+$elseif[$message==economia-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Economia.dbd
+
+$elseif[$message==diversão-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Diversão.dbd
+
+$elseif[$message==moderação-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Moderação.dbd
+
+$elseif[$message==utilidade-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Ajuda-Utilidade.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Não-interação.dbd
 
