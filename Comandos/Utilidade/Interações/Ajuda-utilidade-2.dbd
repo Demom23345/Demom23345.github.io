@@ -1,1 +1,11 @@
 
+$title[$json[EMOJI;utilidade] | Comandos Utilidade] $removeButtons
+$description[
+> **╭───** **ajuda**
+> **├** Alternativos: `help`, `comandos`
+> **╰** Veja meus comandos e utilidades.]
+$footer[Meu prefixo atualmente é Q? $addTimestamp]
+$thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
+
+$addButton[no;helpvoltarutilidade-$authorID;;secondary;no;$json[EMOJI;voltar]]
+$addButton[no;helpproximoutilidade-$authorID;;secondary;yes;$json[EMOJI;proximo]]
