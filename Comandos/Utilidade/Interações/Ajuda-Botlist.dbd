@@ -1,4 +1,4 @@
-$title[$json[EMOJI;bot] | Comandos Botlist]
+$title[$json[EMOJI;bot] | Comandos Botlist] $removeButtons
 $description[
 > **╭───** **addbot**
 > **├** Alternativos: `ab`, `pab`
