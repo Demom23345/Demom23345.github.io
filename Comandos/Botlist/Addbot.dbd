@@ -1,1 +1,6 @@
+$onlyIf[$guildID!=;**$json[EMOJI;errado] |** <@$authorID>, é impossível utilizar esse comando nas minhas mensagens diretas, esse comando só pode ser usado em **servidores**.]
+$onlyIf[$getServerVar[canal-addbot]==$channelID;$json[EMOJI;errado] **|** Este comando não pode ser utilizado nesse canal.]
 
+$json[EMOJI;certo] **|** <@$authorID>, utilize o botão abaixo para adicionar seu bot!
+
+$deleteIn[10s]
