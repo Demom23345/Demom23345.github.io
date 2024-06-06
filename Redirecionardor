@@ -37,6 +37,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Moderaçã
 $elseif[$or[$var[prefix]==queue;$var[prefix]==q]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Queue.dbd
 
+$elseif[$or[$var[prefix]==an;$var[prefix]==analizar;$var[prefix]==análizar;$var[prefix]==analise;$var[prefix]==análise]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Analisar.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
 
