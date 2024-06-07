@@ -3,7 +3,7 @@ $jsonParse[{
   "errado": "<a:lc_erado:1247216925654782116>",
   "certo": "<a:certo:1247216825578688703>",
   "coin": "<:moeda:1247692694638301195>",
-  "id": "🆔",
+  "id": "<:clipedecartaodeidentificacaoalt:1248456288388517959>",
   "coroa": "<:coroa:1248106605459931137>",
   "date": "<:calendario:1248106953092235274>",
   "shard": "💻",
@@ -18,9 +18,13 @@ $jsonParse[{
   "economia": "<:economia:1248235743814352896>",
   "moderação": "<:mod:1248235705088348200>",
   "seta": "<:seta:1248243460469817395>",
-  "message": "<:message:1248303160502648954>"
+  "message": "<:message:1248303160502648954>",
+  "prefix": "<:editar:1248453302103052422>",
+  "lang": "<:codigodecomentario:1248454854347587625>",
+  "desc": "<:livroabertocapa:1248455803787149332>"
 },
 "BOT": {
   "cor": "#b41ee6",
-  "server": "https://discord.gg/WBxTx3fg3z"
+  "server": "https://discord.gg/WBxTx3fg3z",
+  "banner": "https://media.discordapp.net/attachments/1246239192585867304/1248455096350801930/quazar_long_banner.png"
 }}]
