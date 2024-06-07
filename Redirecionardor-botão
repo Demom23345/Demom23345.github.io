@@ -40,6 +40,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/In
 $elseif[$message==edit-bot-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Intera%C3%A7%C3%B5es/Editbot.dbd
 
+$elseif[$customID==modal]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Intera%C3%A7%C3%B5es/Setarditbot.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Não-interação.dbd
 
