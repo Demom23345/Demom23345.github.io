@@ -1,7 +1,7 @@
 $var[user;$findUser[$message[2]]]
+$setVar[mention;$var[user];$authorID]
 
-
-$if[$or[$var[user]==$authorID;$isBot[$var[user]]==false]==true]
+$if[$var[user]==$authorID]
 $author[Perfil do Desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
 $description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
 $addField[$json[EMOJI;user] Informações do Desenvolvedor;
@@ -43,4 +43,21 @@ $thumbnail[$userAvatar[$var[user]]]
 $if[$authorID==$getUserVar[dono;$var[user];$guildID]]
 $addButton[no;editbot-$authorID;Editar Perfil do Bot;secondary;no;$json[EMOJI;edit]]
 $endif
+$elseif[$isBot[$var[user]]==false]
+$author[Perfil do Desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
+$description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
+$addField[$json[EMOJI;user] Informações do Desenvolvedor;
+> $json[EMOJI;seta] Premium: ``$getVar[premium;$var[user]]``
+;no]
+$addField[ Estatísticas do Desenvolvedor;
+> $json[EMOJI;seta] Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
+> $json[EMOJI;seta] Quazcoins: ``$numberSeparator[$getVar[coin;$var[user]]]``
+> $json[EMOJI;seta] Reputações: ``$numberSeparator[$getVar[voto;$var[user]]]``
+;no]
+$addField[$json[EMOJI;desc] Descrição;
+> $getUserVar[desc;$var[user];$guildID];no]
+
+$color[$getUserVar[cor-perfil;$var[user];$guildID]]
+$image[$getUserVar[banner-perfil;$var[user];$guildID]]
+$thumbnail[$userAvatar[$var[user]]]
 $endif
