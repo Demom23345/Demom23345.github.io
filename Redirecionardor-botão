@@ -37,7 +37,7 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/In
 $elseif[$customID==notabotaprovado]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Intera%C3%A7%C3%B5es/Nota-bot-aprovado.dbd
 
-$elseif[$customID==edit-bot]
+$elseif[$or[$message==1-$authorID;$message==2-$authorID;$message==3-$authorID;$message==4-$authorID;$message==5-$authorID;$message==6-$authorID;$message==7-$authorID;$message==8-$authorID]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Intera%C3%A7%C3%B5es/Editbot.dbd
 
 $elseif[$customID==modal]
