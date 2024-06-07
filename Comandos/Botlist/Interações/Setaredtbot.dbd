@@ -1,0 +1,60 @@
+$if[$getVar[2q;$authorID]==1]
+$ephemeral
+**$json[EMOJI;certo] |** <@$authorID>, o prefixo do bot <@$getVar[mention;$authorID]> foi alterado com sucesso! De **$getUserVar[prefix;$getVar[mention;$authorID];$guildID]** para **$input[1]**.
+$setUserVar[prefix;$input[1];$getVar[mention;$authorID];$guildID]
+$changeUsernameWithID[$getVar[mention;$authorID];$cropText[[$getUserVar[prefix;$getVar[mention;$authorID];$guildID]\] $username[$getVar[mention;$authorID]] by: $username[$getUserVar[dono;$getVar[mention;$authorID];$guildID]];29;...]]
+$endif
+
+$if[$getVar[2q;$authorID]==2]
+$ephemeral
+**$json[EMOJI;certo] |** <@$authorID>, a linguagem do bot <@$getVar[mention;$authorID]> foi alterada com sucesso! De **$getUserVar[lang;$getVar[mention;$authorID];$guildID]** para **$input[1]**.
+$setUserVar[lang;$input[1];$getVar[mention;$authorID];$guildID]
+$endif
+
+$if[$getVar[2q;$authorID]==3]
+$ephemeral
+**$json[EMOJI;certo] |** <@$authorID>, a descrição do bot <@$getVar[mention;$authorID]> foi alterada com sucesso! De **$getUserVar[desc;$getVar[mention;$authorID];$guildID]** para **$input[1]**.
+$setUserVar[desc;$input[1];$getVar[mention;$authorID];$guildID]
+$endif
+
+$if[$getVar[2q;$authorID]==4]
+$ephemeral
+$onlyIf[$isValidHex[$input[1]]==true;**$json[EMOJI;errado] |** <@$authorID>, a cor (`$input[1]`) não existe ou não é uma cor válida, tentei novamente!]
+$suppressErrors[**$json[EMOJI;errado] |** <@$authorID>, a cor (`$input[1]`) não existe ou não é uma cor válida, tentei novamente!]
+**$json[EMOJI;certo] |** <@$authorID>, a cor de perfil do bot <@$getVar[mention;$authorID]> foi alterada com sucesso! De **$getUserVar[cor-perfil;$getVar[mention;$authorID];$guildID]** para **$input[1]**.
+$color[$input[1]]
+$footer[Cor alterada com sucesso!]
+$setUserVar[cor-perfil;$input[1];$getVar[mention;$authorID];$guildID]
+$endif
+
+$if[$getVar[2q;$authorID]==5]
+$ephemeral
+$suppressErrors[**$json[EMOJI;errado] |** <@$authorID>, o link da imagem que você colocou é invalido ou não é de uma imagem!]
+**$json[EMOJI;certo] |** <@$authorID>, o banner do bot <@$getVar[mention;$authorID]> foi alterado com sucesso! De **$getUserVar[banner-perfil;$getVar[mention;$authorID];$guildID]** para
+$image[$input[1]]
+$setUserVar[banner-perfil;$input[1];$getVar[mention;$authorID];$guildID]
+$endif
+
+$if[$getVar[2q;$authorID]==6]
+$ephemeral
+**$json[EMOJI;certo] |** <@$authorID>, sua descrição foi alterada com sucesso! De **$getUserVar[desc;$authorID;$guildID]** para **$input[1]**.
+$setUserVar[desc;$input[1];$authorID;$guildID]
+$endif
+
+$if[$getVar[2q;$authorID]==7]
+$ephemeral
+$onlyIf[$isValidHex[$input[1]]==true;**$json[EMOJI;errado] |** <@$authorID>, a cor (`$input[1]`) não existe ou não é uma cor válida, tentei novamente!]
+$suppressErrors[**$json[EMOJI;errado] |** <@$authorID>, a cor (`$input[1]`) não existe ou não é uma cor válida, tentei novamente!]
+**$json[EMOJI;certo] |** <@$authorID>, sua cor de perfil foi alterada com sucesso! De **$getUserVar[cor-perfil;$authorID;$guildID]** para **$input[1]**.
+$color[$input[1]]
+$footer[Cor alterada com sucesso!]
+$setUserVar[cor-perfil;$input[1];$authorID;$guildID]
+$endif
+
+$if[$getVar[2q;$authorID]==8]
+$ephemeral
+$suppressErrors[**$json[EMOJI;errado] |** <@$authorID>, o link da imagem que você colocou é invalido ou não é de uma imagem!]
+**$json[EMOJI;certo] |** <@$authorID>, seu banner foi alterado com sucesso! De **$getUserVar[banner-perfil;$authorID;$guildID]** para
+$image[$input[1]]
+$setUserVar[banner-perfil;$input[1];$authorID;$guildID]
+$endif
