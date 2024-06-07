@@ -21,7 +21,8 @@ $jsonParse[{
   "message": "<:message:1248303160502648954>",
   "prefix": "<:editar:1248453302103052422>",
   "lang": "<:codigodecomentario:1248454854347587625>",
-  "desc": "<:livroabertocapa:1248455803787149332>"
+  "desc": "<:livroabertocapa:1248455803787149332>",
+  "ticket": "<:bilhete:1248465141977059415>"
 },
 "BOT": {
   "cor": "#b41ee6",
