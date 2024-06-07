@@ -22,7 +22,10 @@ $jsonParse[{
   "prefix": "<:editar:1248453302103052422>",
   "lang": "<:codigodecomentario:1248454854347587625>",
   "desc": "<:livroabertocapa:1248455803787149332>",
-  "ticket": "<:bilhete:1248465141977059415>"
+  "ticket": "<:bilhete:1248465141977059415>",
+  "vote": "<:votesim:1248737707484647537>",
+  "dev": "<:segurancadocapacetedousuario:1248738103544385661>",
+  "time": "<:timer:1248252743278399550>"
 },
 "BOT": {
   "cor": "#b41ee6",
