@@ -1,7 +1,7 @@
 $var[canal-correios;$getServerVar[canal-correios]]
 $var[canal-logs;$getServerVar[canal-logs-botlist]]
 $var[cargo-analista;$getServerVar[cargo-analisadores]]
-$deleteButtons
+$deleteMessage[$channelID;$messageID]
 **$json[EMOJI;certo] |** <@$authorID>, análise enviada com sucesso!
 
 $sendEmbedMessage[$var[canal-correios];<@$getUserVar[dono;$getVar[mention;$authorID];$guildID]>;
