@@ -5,8 +5,8 @@ $if[$and[$var[user]==$authorID;$isBot[$var[user]]==false]==true]
 $author[Perfil do desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
 $description[# [$username[$var[user]]\]()]
 $addField[$json[EMOJI;user] Informações do Desenvolvedor;
->>> Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
-;no]
+> $json[EMOJI;bot] Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
+> ;no]
 $if[$authorID==$authorID]
 $addButton[no;edituser-$authorID;Editar Perfil;secondary;no;$json[EMOJI;edit]]
 $endif
