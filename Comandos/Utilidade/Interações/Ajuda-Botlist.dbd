@@ -5,12 +5,15 @@ $description[
 > **╰** Envia o painel de addbot ( adicionar bot ) no canal.
 > **╭───** **analisar**
 > **├** Alternativos: `analise`, `an`
-> **╰** Veja o perfil de um bot no servidor ou de um desenvolvedor.
+> **╰** Envie a nalise de um bot na queue.
 > **╭───** **queue**
 > **├** Alternativos: `q`
 > **╰** Veja a lista de espera de bots no servidor.
 > **╭───** **vote**
 > **├** Alternativos: `votar`, `v`
-> **╰** De um voto a um bot do servidor.]
+> **╰** De um voto a um bot do servidor.
+> **╭───** **perfil**
+> **├** Alternativos: `profile`, `p`
+> **╰** Veja o perdil de um bot/developer do servidor.]
 $footer[Meu prefixo atualmente é Q? $addTimestamp]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
