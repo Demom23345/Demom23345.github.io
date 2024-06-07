@@ -1,4 +1,4 @@
-$if[$and[$isBot[$authorID]==true;$getUserVar[wait;true;$authorID;$guildID]]==true]
+$if[$and[$isBot[$authorID]==true;$getUserVar[wait;$authorID;$guildID]==true]==true]
 
 $sendEmbedMessage[$getServerVar[canal-correios];<@$getUserVar[dono;$authorID;$guildID]>;
 $json[EMOJI;bot] | $nickname[$getUserVar[dono;$authorID;$guildID]] seu Bot Entrou para Análise;;
