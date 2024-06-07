@@ -42,7 +42,7 @@ $endif
 $var[dono;$getUserVar[dono;$getVar[mention;$authorID];$guildID]]
 
 $setUserVar[wait;false;$getVar[mention;$authorID];$guildID]
-$setUserVar[wait;false;$getVar[dono;$getVar[mention;$authorID];$guildID];$guildID]
+$setUserVar[wait;false;$getUserVar[dono;$getVar[mention;$authorID];$guildID];$guildID]
 $setUserVar[aprovado;true;$getVar[mention;$authorID];$guildID]
 $setUserVar[limit;$sum[$getUserVar[limit;$var[dono];$guildID];1];$var[dono];$guildID]
 
