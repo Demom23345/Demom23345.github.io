@@ -40,6 +40,9 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Qu
 $elseif[$or[$var[prefix]==an;$var[prefix]==analizar;$var[prefix]==análizar;$var[prefix]==analise;$var[prefix]==análise]==true]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Analisar.dbd
 
+$elseif[$or[$var[prefix]==v;$var[prefix]==vote;$var[prefix]==votar]==true]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Botlist/Votar.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comando-inexistente
 
