@@ -1,0 +1,18 @@
+$var[user;$findUser[$message[2]]]
+
+
+$if[$and[$var[user]==$authorID;$isBot[$var[user]]==false]==true]
+$author[Perfil do desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
+$description[# [$username[$var[user]]\]()]
+$addField[$json[EMOJI;user] Informações do Desenvolvedor;
+>>> Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
+;no]
+$if[$authorID==$authorID]
+$addButton[no;edituser-$authorID;Editar Perfil;secondary;no;$json[EMOJI;edit]]
+$endif
+$elseif[$isBot[$var[user]]==true]
+
+$if[$authorID==$getUserVar[dono;$var[user];$guildID]]
+$addButton[no;editbot-$authorID;Editar Perfil do Bot;secondary;no;$json[EMOJI;edit]]
+$endif
+$endif
