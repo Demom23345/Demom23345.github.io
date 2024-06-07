@@ -5,8 +5,10 @@ $if[$and[$var[user]==$authorID;$isBot[$var[user]]==false]==true]
 $author[Perfil do desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
 $description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
 $addField[$json[EMOJI;user] Informações do Desenvolvedor;
+> $json[EMOJI;seta] Premium: ``$getVar[premium;$var[user]]``
 > $json[EMOJI;seta] Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
-> $json[EMOJI;seta] Descrição: ``...;no]
+> $json[EMOJI;seta] Descrição: ``$getUserVar[desc;$var[user];$guildID]``;no]
+
 $color[$getUserVar[cor-perfil;$var[user];$guildID]]
 $image[$getUserVar[banner-perfil;$var[user];$guildID]]
 
