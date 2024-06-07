@@ -43,7 +43,7 @@ $setChannelVar[1q;$var[id-2];$var[top-2]]
 
 $var[id-3;$sendEmbedMessage[$var[top-3];;;;>>> ( 📜 ) $getUserVar[desc;$var[bot-3];$guildID]
 ( 📩 ) **$getUserVar[voto;$var[bot-3];$guildID] votos**
-( 👑 ) **$username[$getUserVar[dono;$var[bot-3];$guildID]]** (`$getUserVar[dono;$var[bot-3];$guildID]`);$getUserVar[cor-perfil;$var[bot-3];$guildID];3° $username[$var[bot-3]];$userAvatar[$var[bot-1]];;;$userAvatar[$var[bot-1]];$getUserVar[banner-perfil;$var[bot-3];$guildID];;yes]]
+( 👑 ) **$username[$getUserVar[dono;$var[bot-3];$guildID]]** (`$getUserVar[dono;$var[bot-3];$guildID]`);$getUserVar[cor-perfil;$var[bot-3];$guildID];3° $username[$var[bot-3]];$userAvatar[$var[bot-3]];;;$userAvatar[$var[bot-1]];$getUserVar[banner-perfil;$var[bot-3];$guildID];;yes]]
 $async[wait3] $useChannel[$var[top-3]] $addButton[no;https://discord.com/oauth2/authorize?client_id=$var[bot-3]&permissions=0&scope=bot;Adicionar Bot;link;no;;$var[id-3]] $endasync
 $setChannelVar[1q;$var[id-3];$var[top-3]]
 $endif
