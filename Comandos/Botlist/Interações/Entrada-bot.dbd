@@ -1,0 +1,6 @@
+$if[$and[$isBot[$authorID]==true;]]
+
+
+
+
+$endif
