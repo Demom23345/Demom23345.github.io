@@ -1,7 +1,7 @@
 $onlyIf[$or[$hasRole[$authorID;$getServerVar[cargo-analisadores]]==true;$serverOwner==$authorID]==true;**$json[EMOJI;errado] |** <@$authorID>, você não tem permissão de utilizar esse comando apenas a equipe da staff pode!]
 $onlyIf[$mentioned[1;yes]!=$authorID;**$json[EMOJI;errado] |** <@$authorID>, mencione um bot que está na lista de espera!]
 $onlyIf[$getUserVar[wait;$mentioned[1];$guildID]==true;**$json[EMOJI;errado] |** <@$authorID>, esse bot não está na lista de espera.]
-$onlyIf[$getUserVar[dono;$mentioned[1];$guildID]==$authorID;**$json[EMOJI;errado] |** <@$authorID> você não pode analisar seu próprio bot!]
+$onlyIf[$getUserVar[dono;$mentioned[1];$guildID]>=$authorID;**$json[EMOJI;errado] |** <@$authorID> você não pode analisar seu próprio bot!]
 
 $setVar[mention;$mentioned[1];$authorID]
 
