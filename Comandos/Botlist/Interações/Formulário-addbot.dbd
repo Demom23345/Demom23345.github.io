@@ -1,5 +1,5 @@
 $ephemeral
-$onlyIf[$getVar[wait;$authorID]==false;**$json[EMOJI;errado] |** <@$authorID> você possui um bot na lista de espera, aguarde analisarem seu bot para enviar outro!]
+$onlyIf[$getUserVar[wait;$authorID;$guildID]==false;**$json[EMOJI;errado] |** <@$authorID> você possui um bot na lista de espera, aguarde analisarem seu bot para enviar outro!]
 
 $newModal[botadd;Formulário Addbot]
 $addTextInput[id;short;ID DO BOT;18;23;no;;Digite o ID do seu bot.]
