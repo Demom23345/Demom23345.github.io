@@ -1,5 +1,4 @@
 $var[user;$findUser[$message[2]]]
-$var[top-1;1245535738766819440] $var[top-2;1247281423354826752] $var[top-3;1247281477645766686]
 
 $onlyIf[$message[2]!=;**$json[EMOJI;errado] |** <@$authorID>, você se esqueceu de mencionar um bot para votar!]
 $onlyIf[$isBot[$var[user]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot ( `$message[2]` ) não existe ou não é um bot.]
