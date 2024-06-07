@@ -23,6 +23,22 @@ $if[$var[user]==$authorID]
 $addButton[no;edituser-$authorID;Editar Perfil;secondary;no;$json[EMOJI;edit]]
 $endif
 $elseif[$isBot[$var[user]]==true]
+$author[Perfil do Bot] $authorIcon[$userAvatar[$var[user]]]
+$description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
+$addField[$json[EMOJI;user] Informações do Bot;
+> $json[EMOJI;seta] Prefixo: ``$getUserVar[prefix;$var[user];$guildID]``
+> $json[EMOJI;seta] Linguagem: ``$getUserVar[lang;$var[user];$guildID]``
+> $json[EMOJI;seta] Desenvolvedor: ``@$username[$getUserVar[dono;$var[user];$guildID]]``
+;no]
+$addField[ Estatísticas do Bot;
+> $json[EMOJI;seta] Votos: ``$numberSeparator[$getVar[voto;$var[user]]]``
+;no]
+$addField[$json[EMOJI;desc] Descrição;
+> $getUserVar[desc;$var[user];$guildID];no]
+
+$color[$getUserVar[cor-perfil;$var[user];$guildID]]
+$image[$getUserVar[banner-perfil;$var[user];$guildID]]
+$thumbnail[$userAvatar[$var[user]]]
 
 $if[$authorID==$getUserVar[dono;$var[user];$guildID]]
 $addButton[no;editbot-$authorID;Editar Perfil do Bot;secondary;no;$json[EMOJI;edit]]
