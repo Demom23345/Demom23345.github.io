@@ -1,1 +1,2 @@
-$newModal[nota-bot-aprovado;
+$newModal[nota-bot-aprovado;Nota]
+$addtextInput[nota;paragraph;NOTA DA APROVAÇÃO;0;400;Um ótimo bot!;Escreva uma nota para esse bot]
