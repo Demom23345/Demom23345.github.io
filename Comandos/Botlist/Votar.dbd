@@ -3,7 +3,7 @@ $var[user;$findUser[$message[2]]]
 $onlyIf[$message[2]!=;**$json[EMOJI;errado] |** <@$authorID>, você se esqueceu de mencionar um bot para votar!]
 $onlyIf[$isBot[$var[user]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot ( `$message[2]` ) não existe ou não é um bot.]
 $onlyIf[$getUserVar[aprovado;$var[user];$guildID]==true;**$json[EMOJI;errado] |** <@$authorID>, esse bot não foi registrado no meu sistema.]
-$globalCooldown[4h;**$json[EMOJI;time] |** <@$authorID>, volte <t:$sum[$getTimestamp;$getCooldown[global]]:R> para votar novamente.]
+$globalCooldown[1s;**$json[EMOJI;time] |** <@$authorID>, volte <t:$sum[$getTimestamp;$getCooldown[global]]:R> para votar novamente.]
 
 $setVar[coin;$sum[$getVar[coin;$authorID];$random[50;100]];$authorID]
 $setVar[coin;$sum[$getVar[coin;$getUserVar[dono;$var[user];$guildID]];$random[50;100]];$getUserVar[dono;$var[user];$guildID]]
