@@ -1,0 +1,53 @@
+$nomention $deletecommand
+
+$var[canal-correios;$getServerVar[canal-correios]]
+$var[canal-logs;$getServerVar[canal-logs-botlist]]
+$var[cargo-analista;$getServerVar[cargo-analisadores]]
+
+**$json[EMOJI;certo] |** <@$authorID>, análise enviada com sucesso!
+
+$sendEmbedMessage[$var[canal-correios];<@$getVar[dono;$getVar[mention;$authorID]]>;
+$json[EMOJI;certo] | $nickname[$getVar[dono;$getVar[mention;$authorID]]] seu Bot foi Aprovado;;
+>>> O bot **$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]** foi aprovado!
+**├** Enviado em: <t:$getVar[tamp;$getVar[mention;$authorID]]:F>
+**╰** Nota: **$input[nota]**;ff000;;;$username | $authorID;$authorAvatar;$userAvatar[$getVar[mention;$authorID]];;yes;no]
+
+$if[$getServerVar[1q]==[$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]\](https://discord.com/oauth2/authorize?client_id=$getVar[mention;$authorID]&permissions=0&scope=bot)]
+$setServerVar[1q;$getServerVar[2q]]
+$setServerVar[2q;$getServerVar[3q]]
+$setServerVar[3q;$getServerVar[4q]]
+$setServerVar[4q;$getServerVar[5q]]
+$setServerVar[5q;$getServerVar[6q]]
+$setServerVar[6q;]
+$elseif[$getServerVar[2q]==[$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]\](https://discord.com/oauth2/authorize?client_id=$getVar[mention;$authorID]&permissions=0&scope=bot)]
+$setServerVar[2q;$getServerVar[3q]]
+$setServerVar[3q;$getServerVar[4q]]
+$setServerVar[4q;$getServerVar[5q]]
+$setServerVar[5q;$getServerVar[6q]]
+$setServerVar[6q;]
+$elseif[$getServerVar[3q]==[$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]\](https://discord.com/oauth2/authorize?client_id=$getVar[mention;$authorID]&permissions=0&scope=bot)]
+$setServerVar[3q;$getServerVar[4q]]
+$setServerVar[4q;$getServerVar[5q]]
+$setServerVar[5q;$getServerVar[6q]]
+$setServerVar[6q;]
+$elseif[$getServerVar[4q]==[$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]\](https://discord.com/oauth2/authorize?client_id=$getVar[mention;$authorID]&permissions=0&scope=bot)]
+$setServerVar[4q;$getServerVar[5q]]
+$setServerVar[5q;$getServerVar[6q]]
+$setServerVar[6q;]
+$elseif[$getServerVar[5q]==[$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]\](https://discord.com/oauth2/authorize?client_id=$getVar[mention;$authorID]&permissions=0&scope=bot)]
+$setServerVar[5q;$getServerVar[6q]]
+$setServerVar[6q;]
+$elseif[$getServerVar[6q]==[$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]\](https://discord.com/oauth2/authorize?client_id=$getVar[mention;$authorID]&permissions=0&scope=bot)]
+$setServerVar[6q;]
+$endif
+
+$var[dono;$getVar[dono;$getVar[mention;$authorID]]]
+
+$setVar[wait;false;$getVar[mention;$authorID]]
+$setVar[wait;false;$getVar[dono;$getVar[mention;$authorID]]]
+$setVar[aprovado;true;$getVar[mention;$authorID]]
+$setVar[limit;$sum[$getVar[limit;$var[dono]];1];$var[dono]]
+
+$changeUsernameWithID[$getVar[mention;$authorID];$cropText[[$getVar[prefix;$getVar[mention;$authorID]]\] $username[$getVar[mention;$authorID]] by: $username[$getVar[dono;$getVar[mention;$authorID]]];29;...]]
+$roleGrant[$getVar[mention;$authorID];+1246204869686067240]
+$roleGrant[$var[dono];+1246207700468109353]
