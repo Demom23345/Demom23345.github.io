@@ -9,6 +9,6 @@ $setVar[coin;$sum[$getVar[coin;$authorID];$random[50;100]];$authorID]
 $setVar[coin;$sum[$getVar[coin;$getUserVar[dono;$var[user];$guildID]];$random[50;100]];$getUserVar[dono;$var[user];$guildID]]
 $setUserVar[voto;$sum[$getUserVar[voto;$var[user];$guildID];1];$var[user];$guildID]
 
-$json[EMOJI;vote] **|** <@$authorID>, votou no bot **$username[$var[user]]#$discriminator[$var[user]]** que agora tem um total de **$numberSeparator[$getVar[voto;$var[user]]] votos**
+$json[EMOJI;vote] **|** <@$authorID>, votou no bot **$username[$var[user]]#$discriminator[$var[user]]** que agora tem um total de **$numberSeparator[$getUserVar[voto;$var[user];$guildID]] votos**
 > $json[EMOJI;time] **|** Volte em **[4 horas\]($json[BOT;banner-vote]).**
 > $json[EMOJI;coin] **|** Você ganhou **$random[50;100] quazcoins**!
