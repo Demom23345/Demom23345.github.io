@@ -11,6 +11,7 @@ $addField[$json[EMOJI;user] Informações do Desenvolvedor;
 
 $color[$getUserVar[cor-perfil;$var[user];$guildID]]
 $image[$getUserVar[banner-perfil;$var[user];$guildID]]
+$thumbnail[$userAvatar[$var[user]]]
 
 $if[$authorID==$authorID]
 $addButton[no;edituser-$authorID;Editar Perfil;secondary;no;$json[EMOJI;edit]]
