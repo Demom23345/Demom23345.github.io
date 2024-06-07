@@ -5,9 +5,9 @@ $onlyIf[$isBot[$var[user]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot (
 $onlyIf[$getUserVar[aprovado;$var[user];$guildID]==true;**$json[EMOJI;errado] |** <@$authorID>, esse bot não foi registrado no meu sistema.]
 $globalCooldown[4h;**$json[EMOJI;time] |** <@$authorID>, volte <t:$sum[$getTimestamp;$getCooldown[global]]:R> para votar novamente.]
 
-$setVar[moedas;$sum[$getVar[moedas;$authorID];$random[50;100]];$authorID]
-$setVar[moedas;$sum[$getVar[moedas;$getVar[dono;$var[user]]];$random[50;100]];$getVar[dono;$var[user]]]
-$setVar[voto;$sum[$getVar[voto;$var[user]];1];$var[user]]
+$setVar[coin;$sum[$getVar[coin;$authorID];$random[50;100]];$authorID]
+$setVar[coin;$sum[$getVar[coin;$getVar[dono;$var[user];$guildID]];$random[50;100]];$getUserVar[dono;$var[user];$guildID]]
+$setUserVar[voto;$sum[$getUserVar[voto;$var[user];$guildID];1];$var[user];$guildID]
 
 $json[EMOJI;vote] **|** <@$authorID>, votou no bot **$username[$var[user]]#$discriminator[$var[user]]** que agora tem um total de **$numberSeparator[$getVar[voto;$var[user]]] votos**
 > $json[EMOJI;time] **|** Volte em **[4 horas\]($json[BOT;banner-vote]).**
