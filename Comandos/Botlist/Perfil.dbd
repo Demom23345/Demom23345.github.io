@@ -9,7 +9,7 @@ $addField[$json[EMOJI;user] Informações do Desenvolvedor;
 > ;no]
 $addField[ Estatísticas do Desenvolvedor;
 > $json[EMOJI;seta] Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
-> $json[EMOJI;seta] Quazcoins: ``$numberSeparator[$getVar[coin;$var[user]]]
+> $json[EMOJI;seta] Quazcoins: ``$numberSeparator[$getVar[coin;$var[user]]]``
 > $json[EMOJI;seta] Reputações: ``$numberSeparator[$getVar[voto;$var[user]]]``;no]
 $addField[$json[EMOJI;desc] Descrição;
 > $getUserVar[desc;$var[user];$guildID];no]
