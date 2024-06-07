@@ -27,5 +27,6 @@ $jsonParse[{
 "BOT": {
   "cor": "#b41ee6",
   "server": "https://discord.gg/WBxTx3fg3z",
-  "banner": "https://media.discordapp.net/attachments/1246239192585867304/1248455096350801930/quazar_long_banner.png"
+  "banner": "https://media.discordapp.net/attachments/1246239192585867304/1248455096350801930/quazar_long_banner.png",
+  "banner-vote": "https://media.discordapp.net/attachments/1246239192585867304/1248486513570746408/quazar_vote_long_banner.png"
 }}]
