@@ -9,6 +9,8 @@ $description[
 > **╭───** **queue**
 > **├** Alternativos: `q`
 > **╰** Veja a lista de espera de bots no servidor.
-]
+> **╭───** **vote**
+> **├** Alternativos: `votar`, `v`
+> **╰** De um voto a um bot do servidor.]
 $footer[Meu prefixo atualmente é Q? $addTimestamp]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
