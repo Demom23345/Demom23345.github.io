@@ -35,13 +35,13 @@ $addTextInput[1;short;NOVA DESCRIÇÃO;20;300;true;$getUserVar[desc;$authorID;$g
 $endif
 
 $if[$message==7-$authorID]
-$setVar[2q;4;$authorID]
+$setVar[2q;7;$authorID]
 $newModal[modal;Alterar Cor Perfil]
 $addTextInput[1;short;NOVA COR;5;7;true;$getUserVar[cor-perfil;$authorID;$guildID];Coloque uma cor hex ex. #ffff]
 $endif
 
 $if[$message==8-$authorID]
-$setVar[2q;5;$authorID]
+$setVar[2q;8;$authorID]
 $newModal[modal;Alterar Banner]
 $addTextInput[1;short;NOVO BANNER;10;400;true;$getUserVar[banner-perfil;$authorID;$guildID];Coloque o link do banner aqui.]
 $endif
