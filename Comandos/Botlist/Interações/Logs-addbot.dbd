@@ -2,7 +2,7 @@
 $ephemeral
 $onlyIf[$userExists[$input[id]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot (`$input[id]`) não existe ou não é um bot envie novamente.]
 $onlyIf[$isBot[$input[id]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot (`$input[id]`) não existe ou não é um bot envie novamente.]
-$onlyIf[$getVar[limit;$authorID]>=$getServerVar[limite];**$json[EMOJI;errado] |** <@$authorID>, você já alcançou o limite de bot permitido no servidor.]
+$onlyIf[$getVar[limit;$authorID]<=$getServerVar[limite];**$json[EMOJI;errado] |** <@$authorID>, você já alcançou o limite de bot permitido no servidor.]
 
 $var[canal-correios;$getServerVar[canal-correios]]
 $var[canal-logs;$getServerVar[canal-logs-botlist]]
