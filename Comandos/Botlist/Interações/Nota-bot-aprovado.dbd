@@ -7,8 +7,8 @@ $var[cargo-analista;$getServerVar[cargo-analisadores]]
 $sendEmbedMessage[$var[canal-correios];<@$getUserVar[dono;$getVar[mention;$authorID];$guildID]>;
 $json[EMOJI;certo] | $nickname[$getUserVar[dono;$getVar[mention;$authorID];$guildID]] seu Bot foi Aprovado;;
 >>> O bot **$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]** foi aprovado!
-**├** Enviado em: <t:$getUserVar[tamp;$getVar[mention;$authorID];$guildID]:F>
-**╰** Nota: **$input[nota]**;ff000;;;$username | $authorID;$authorAvatar;$userAvatar[$getVar[mention;$authorID]];;yes;no]
+Enviado em: <t:$getUserVar[tamp;$getVar[mention;$authorID];$guildID]:F>
+Nota: ``$input[nota]``;ff000;;;$username | $authorID;$authorAvatar;$userAvatar[$getVar[mention;$authorID]];;yes;no]
 
 $if[$getServerVar[1q]==[$username[$getVar[mention;$authorID]]#$discriminator[$getVar[mention;$authorID]]\](https://discord.com/oauth2/authorize?client_id=$getVar[mention;$authorID]&permissions=0&scope=bot)]
 $setServerVar[1q;$getServerVar[2q]]
@@ -49,3 +49,4 @@ $setUserVar[limit;$sum[$getUserVar[limit;$var[dono];$guildID];1];$var[dono];$gui
 $changeUsernameWithID[$getVar[mention;$authorID];$cropText[[$getUserVar[prefix;$getVar[mention;$authorID];$guildID]\] $username[$getVar[mention;$authorID]] by: $username[$getUserVar[dono;$getVar[mention;$authorID];$guildID]];29;...]]
 $roleGrant[$getVar[mention;$authorID];+$getServerVar[cargo-bot-verificado]]
 $roleGrant[$var[dono];+$getServerVar[cargo-dev]]
+$roleGrant[$authorID;-$getServerVar[cargo-bot-em-analise]]
