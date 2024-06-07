@@ -2,22 +2,23 @@ $var[user;$replaceText[$findUser[$message[2]];@me;$authorID;-1]]
 $setVar[mention;$var[user];$authorID]
 
 $if[$var[user]==$authorID]
-$author[Perfil do Desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
-$description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
+$author[Perfil do Desenvolvedor;1] $authorIcon[$userAvatar[$var[user]];1]
+$description[# [$username[$var[user]]\](https://discord.com/users/$var[user]);1]
 $addField[$json[EMOJI;user] Informações do Desenvolvedor;
 > $json[EMOJI;seta] Premium: ``$getVar[premium;$var[user]]``
-;no]
+;no;1]
 $addField[$json[EMOJI;dev] Estatísticas do Desenvolvedor;
 > $json[EMOJI;seta] Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
 > $json[EMOJI;seta] Quazcoins: ``$numberSeparator[$getVar[coin;$var[user]]]``
 > $json[EMOJI;seta] Reputações: ``$numberSeparator[$getVar[voto;$var[user]]]``
-;no]
+;no;1]
 $addField[$json[EMOJI;desc] Descrição;
-> $getUserVar[desc;$var[user];$guildID];no]
+> $getUserVar[desc;$var[user];$guildID];no;1]
 
-$color[$getUserVar[cor-perfil;$var[user];$guildID]]
-$image[$getUserVar[banner-perfil;$var[user];$guildID]]
-$thumbnail[$userAvatar[$var[user]]]
+$color[$getUserVar[cor-perfil;$var[user];$guildID];1]
+$color[$getUserVar[cor-perfil;$var[user];$guildID];2]
+$image[$getUserVar[banner-perfil;$var[user];$guildID];2]
+$thumbnail[$userAvatar[$var[user]];1]
 
 $if[$var[user]==$authorID]
 $newSelectMenu[edit-bot;1;1;› Edite suas Informações]
@@ -26,22 +27,23 @@ $addSelectMenuOption[edit-bot;Cor;7-$authorID;Altere a cor do seu perfil;no;$jso
 $addSelectMenuOption[edit-bot;Banner;8-$authorID;Altere o banner que está no seu perfil;no;$json[EMOJI;image]]
 $endif
 $elseif[$isBot[$var[user]]==true]
-$author[Perfil do Bot] $authorIcon[$userAvatar[$var[user]]]
-$description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
+$author[Perfil do Bot;1] $authorIcon[$userAvatar[$var[user]];1]
+$description[# [$username[$var[user]]\](https://discord.com/users/$var[user]);1]
 $addField[$json[EMOJI;user] Informações do Bot;
 > $json[EMOJI;seta] Prefixo: ``$getUserVar[prefix;$var[user];$guildID]``
 > $json[EMOJI;seta] Linguagem: ``$getUserVar[lang;$var[user];$guildID]``
 > $json[EMOJI;seta] Desenvolvedor: ``@$username[$getUserVar[dono;$var[user];$guildID]]``
-;no]
+;no;1]
 $addField[$json[EMOJI;bot] Estatísticas do Bot;
 > $json[EMOJI;seta] Votos: ``$numberSeparator[$getVar[voto;$var[user]]]``
-;no]
+;no;1]
 $addField[$json[EMOJI;desc] Descrição;
-> $getUserVar[desc;$var[user];$guildID];no]
+> $getUserVar[desc;$var[user];$guildID];no;1]
 
-$color[$getUserVar[cor-perfil;$var[user];$guildID]]
-$image[$getUserVar[banner-perfil;$var[user];$guildID]]
-$thumbnail[$userAvatar[$var[user]]]
+$color[$getUserVar[cor-perfil;$var[user];$guildID];1]
+$color[$getUserVar[cor-perfil;$var[user];$guildID];2]
+$image[$getUserVar[banner-perfil;$var[user];$guildID];2]
+$thumbnail[$userAvatar[$var[user]];1]
 
 $if[$authorID==$getUserVar[dono;$var[user];$guildID]]
 $newSelectMenu[edit-bot;1;1;› Edite as Informações do seu Bot]
@@ -52,20 +54,21 @@ $addSelectMenuOption[edit-bot;Cor;4-$authorID;Altere a cor do perfil do bot;no;$
 $addSelectMenuOption[edit-bot;Banner;5-$authorID;Altere o banner que está no perfil do bot;no;$json[EMOJI;image]]
 $endif
 $elseif[$isBot[$var[user]]==false]
-$author[Perfil do Desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
-$description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
+$author[Perfil do Desenvolvedor;1] $authorIcon[$userAvatar[$var[user]];1]
+$description[# [$username[$var[user]]\](https://discord.com/users/$var[user]);1]
 $addField[$json[EMOJI;user] Informações do Desenvolvedor;
 > $json[EMOJI;seta] Premium: ``$getVar[premium;$var[user]]``
-;no]
+;no;1]
 $addField[$json[EMOJI;dev] Estatísticas do Desenvolvedor;
 > $json[EMOJI;seta] Bots Registrados: ``$getUserVar[limit;$var[user];$guildID]/$getServerVar[limite]``
 > $json[EMOJI;seta] Quazcoins: ``$numberSeparator[$getVar[coin;$var[user]]]``
 > $json[EMOJI;seta] Reputações: ``$numberSeparator[$getVar[voto;$var[user]]]``
-;no]
+;no;1]
 $addField[$json[EMOJI;desc] Descrição;
-> $getUserVar[desc;$var[user];$guildID];no]
+> $getUserVar[desc;$var[user];$guildID];no;1]
 
-$color[$getUserVar[cor-perfil;$var[user];$guildID]]
-$image[$getUserVar[banner-perfil;$var[user];$guildID]]
-$thumbnail[$userAvatar[$var[user]]]
+$color[$getUserVar[cor-perfil;$var[user];$guildID];1]
+$color[$getUserVar[cor-perfil;$var[user];$guildID];2]
+$image[$getUserVar[banner-perfil;$var[user];$guildID];2]
+$thumbnail[$userAvatar[$var[user]];1]
 $endif
