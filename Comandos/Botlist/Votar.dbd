@@ -12,3 +12,37 @@ $setUserVar[voto;$sum[$getUserVar[voto;$var[user];$guildID];1];$var[user];$guild
 $json[EMOJI;vote] **|** <@$authorID>, votou no bot **$username[$var[user]]#$discriminator[$var[user]]** que agora tem um total de **$numberSeparator[$getUserVar[voto;$var[user];$guildID]] votos**
 > $json[EMOJI;time] **|** Volte em **[4 horas\]($json[BOT;banner-vote]).**
 > $json[EMOJI;coin] **|** Você ganhou **$random[50;100] quazcoins**!
+
+
+
+$var[top-1;1245535738766819440] $var[bot-1;$getLeaderboardValue[user;voto;asc;1;id]]
+$var[top-2;1247281423354826752] $var[bot-2;$getLeaderboardValue[user;voto;asc;2;id]]
+$var[top-3;1247281477645766686] $var[bot-3;$getLeaderboardValue[user;voto;asc;3;id]]
+
+$if[$or[$var[bot-1]==$var[user];$var[bot-2]==$var[user];$var[bot-3]==$var[user]]==true]
+$deleteMessage[$var[top-1];$getChannelVar[1q;$var[top-1]]]
+$deleteMessage[$var[top-2];$getChannelVar[1q;$var[top-2]]]
+$deleteMessage[$var[top-3];$getChannelVar[1q;$var[top-3]]]
+
+$modifyChannel[$var[top-1];┆🥇┆・$username[$var[bot-1]];;false;10;1247280862823714887]
+$modifyChannel[$var[top-2];┆🥈┆・$username[$var[bot-2]];;false;11;1247280862823714887]
+$modifyChannel[$var[top-3];┆🥉┆・$username[$var[bot-3]];;false;12;1247280862823714887]
+
+$var[id-1;$sendEmbedMessage[$var[top-1];;;;>>> ( 📜 ) $getUserVar[desc;$var[bot-1];$guildID]
+( 📩 ) **$getUserVar[voto;$var[bot-1];$guildID] votos**
+( 👑 ) **$username[$getUserVar[dono;$var[bot-1];$guildID]]** (`$getUserVar[dono;$var[bot-1];$guildID]`);$getUserVar[cor-perfil;$var[bot-1];$guildID];1° $username[$var[bot-1]];$userAvatar[$var[bot-1]];;;$userAvatar[$var[bot-1]];$getUserVar[banner-perfil;$var[bot-1];$guildID];;yes]]
+$async[wait1] $useChannel[$var[top-1]] $addButton[no;https://discord.com/oauth2/authorize?client_id=$var[bot-1]&permissions=0&scope=bot;Adicionar Bot;link;no;;$var[id-1]] $endasync
+$setChannelVar[1q;$var[id-1];$var[top-1]]
+
+$var[id-2;$sendEmbedMessage[$var[top-2];;;;>>> ( 📜 ) $getUserVar[desc;$var[bot-2];$guildID]
+( 📩 ) **$getUserVar[voto;$var[bot-2];$guildID] votos**
+( 👑 ) **$username[$getUserVar[dono;$var[bot-2];$guildID]]** (`$getUserVar[dono;$var[bot-2];$guildID]`);$getUserVar[cor-perfil;$var[bot-2];$guildID];2° $username[$var[bot-2]];$userAvatar[$var[bot-2]];;;$userAvatar[$var[bot-2]];$getUserVar[banner-perfil;$var[bot-2];$guildID];;yes]]
+$async[wait2] $useChannel[$var[top-2]] $addButton[no;https://discord.com/oauth2/authorize?client_id=$var[bot-2]&permissions=0&scope=bot;Adicionar Bot;link;no;;$var[id-2]] $endasync
+$setChannelVar[1q;$var[id-2];$var[top-2]]
+
+$var[id-3;$sendEmbedMessage[$var[top-3];;;;>>> ( 📜 ) $getUserVar[desc;$var[bot-3];$guildID]
+( 📩 ) **$getUserVar[voto;$var[bot-3];$guildID] votos**
+( 👑 ) **$username[$getUserVar[dono;$var[bot-3];$guildID]]** (`$getUserVar[dono;$var[bot-3];$guildID]`);$getUserVar[cor-perfil;$var[bot-3];$guildID];3° $username[$var[bot-3]];$userAvatar[$var[bot-1]];;;$userAvatar[$var[bot-1]];$getUserVar[banner-perfil;$var[bot-3];$guildID];;yes]]
+$async[wait3] $useChannel[$var[top-3]] $addButton[no;https://discord.com/oauth2/authorize?client_id=$var[bot-3]&permissions=0&scope=bot;Adicionar Bot;link;no;;$var[id-3]] $endasync
+$setChannelVar[1q;$var[id-3];$var[top-3]]
+$endif
