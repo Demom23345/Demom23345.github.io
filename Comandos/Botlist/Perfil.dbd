@@ -1,7 +1,7 @@
 $var[user;$findUser[$message[2]]]
 
 
-$if[$and[$var[user]==$authorID;$isBot[$var[user]]==false]==true]
+$if[$or[$var[user]==$authorID;$isBot[$var[user]]==false]==true]
 $author[Perfil do Desenvolvedor] $authorIcon[$userAvatar[$var[user]]]
 $description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
 $addField[$json[EMOJI;user] Informações do Desenvolvedor;
