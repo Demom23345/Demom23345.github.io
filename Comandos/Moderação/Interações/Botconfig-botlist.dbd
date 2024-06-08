@@ -1,0 +1,5 @@
+$description[# Botlist
+> Edite a botlist do servidor]
+$addButton[no;bb-text-$authorID;Painels;secondary;no;$json[EMOJI;painel]]
+$addButton[no;bb-cargo-$authorID;Cargos;secondary;no;$json[EMOJI;cargo]]
+$addButton[no;bb-canal-$authorID;Canais;secondary;no;$json[EMOJI;canal]]
