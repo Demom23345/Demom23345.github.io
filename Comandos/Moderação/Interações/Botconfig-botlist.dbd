@@ -4,6 +4,9 @@ $description[# Botlist
 $image[$json[BOT;banner];2]
 $color[$json[BOT;cor];1]
 $color[$json[BOT;cor];2]
+
+$removeButtons
+
 $addButton[no;bb-text-$authorID;Painels;secondary;no;$json[EMOJI;painel]]
 $addButton[no;bb-cargo-$authorID;Cargos;secondary;no;$json[EMOJI;cargo]]
 $addButton[no;bb-canal-$authorID;Canais;secondary;no;$json[EMOJI;canal]]
