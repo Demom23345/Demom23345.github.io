@@ -7,8 +7,8 @@ $color[$json[BOT;cor];2]
 $thumbnail[$userAvatar[$botID];1]
 $removeButtons
 
-$addButton[no;bb-text-$authorID;Painels;secondary;no;$json[EMOJI;painel]]
-$addButton[no;bb-cargo-$authorID;Cargos;secondary;no;$json[EMOJI;cargo]]
-$addButton[no;bb-canal-$authorID;Canais;secondary;no;$json[EMOJI;canal]]
-$addButton[no;bb-outro-$authorID;Outros;secondary;no;$json[EMOJI;outros]]
-$addButton[no;bb-voltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
+$addButton[no;bbtext-$authorID;Painels;secondary;no;$json[EMOJI;painel]]
+$addButton[no;bbcargo-$authorID;Cargos;secondary;no;$json[EMOJI;cargo]]
+$addButton[no;bbcanal-$authorID;Canais;secondary;no;$json[EMOJI;canal]]
+$addButton[no;bboutro-$authorID;Outros;secondary;no;$json[EMOJI;outros]]
+$addButton[no;bbvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
