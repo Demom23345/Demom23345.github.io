@@ -1,5 +1,9 @@
 $description[# Moderação 
 > Aqui você podera editar toda a parte do meu sistema de moderação, não se esqueça de configurar os canais corretamente!;1]
+$addField[Sistemas;
+> $if[$getServerVar[anti]!=OFF]$json[EMOJI;on]$else$json[EMOJI;off]$endif Anti-Convite
+> $if[$getUserVar[anti;$serverOwner;$guildID]!=OFF]$json[EMOJI;on]$else$json[EMOJI;off]$endif Anti-Fake
+;no;1]
 
 $image[$json[BOT;banner];2]
 $color[$json[BOT;cor];1]
