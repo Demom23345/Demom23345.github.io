@@ -1,3 +1,5 @@
+$onlyBotPerms[manageroles;$json[EMOJI;errado] **|** <@$authorID>, eu não possuo permissão de de gerenciar cargos. Adicione essa permisão para poder ativar o sistema de cargo automático.]
+
 $if[$getUserVar[anti;$botID;$guildID]==ON]
 $setUserVar[anti;OFF;$botID;$guildID]
 $removeButtons
