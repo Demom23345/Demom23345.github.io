@@ -1,1 +1,16 @@
+$var[cargo;$findRole[$inpurt[1]]]
 
+$onlyIf[$roleExists[$var[cargo]]==true;$json[EMOJI;errado] **|** <@$authorID>, o cargo ´$input[1]´ não existe ou não é um cargo, para pegar o ID de um cargo utilize `Q?roleinfo`]
+
+$if[$getServerVar[cargo-auto]==]
+$setServerVar[cargo-auto;$var[cargo]]
+$json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com succeso!
+$elseif[$getUserVar[cargo-auto;$botID;$guildID]==]
+$setUserVar[cargo-auto;$var[cargo];$botID;$guildID]
+$json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com succeso!
+$elseif[$getUserVar[cargo-auto;$serverowner;$guildID]==]
+$setUserVar[cargo-auto;$var[cargo];$serverowner;$guildID]
+$json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com succeso!
+$else
+$json[EMOJI;errado] **|** <@$authorID>, o servidor alcançou o limite da cargos automáticos, para poder adicionar mais cargos compre a versão premium.
+$endif
