@@ -9,7 +9,7 @@ $addField[$json[EMOJI;info] Informações;
 $color[$json[BOT;cor];1] $thumbnail[$userAvatar[$botID];1] $color[$json[BOT;cor];2]
 $image[$json[BOT;banner];2]
 
-$deleteButtons
+$removeButtons
 
 $addButton[no;ticketconfig-$authorID;Ticket;secondary;no;]
 $addButton[no;modconfig-$authorID;Moderação;secondary;no;]
