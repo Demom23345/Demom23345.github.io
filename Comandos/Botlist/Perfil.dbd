@@ -1,5 +1,4 @@
 $var[user;$replaceText[$findUser[$message[2]];@me;$authorID;-1]]
-$setVar[mention;$var[user];$authorID]
 
 $if[$var[user]==$authorID]
 $author[Perfil do Desenvolvedor;1] $authorIcon[$userAvatar[$var[user]];1]
@@ -21,6 +20,7 @@ $image[$getUserVar[banner-perfil;$var[user];$guildID];2]
 $thumbnail[$userAvatar[$var[user]];1]
 
 $if[$var[user]==$authorID]
+$setVar[mention;$var[user];$authorID]
 $newSelectMenu[edit-bot;1;1;› Edite suas Informações]
 $addSelectMenuOption[edit-bot;Descrição;6-$authorID;Altere sua descrição;no;$json[EMOJI;desc]]
 $addSelectMenuOption[edit-bot;Cor;7-$authorID;Altere a cor do seu perfil;no;$json[EMOJI;color]]
@@ -46,6 +46,7 @@ $image[$getUserVar[banner-perfil;$var[user];$guildID];2]
 $thumbnail[$userAvatar[$var[user]];1]
 
 $if[$authorID==$getUserVar[dono;$var[user];$guildID]]
+$setVar[mention;$var[user];$authorID]
 $newSelectMenu[edit-bot;1;1;› Edite as Informações do seu Bot]
 $addSelectMenuOption[edit-bot;Prefixo;1-$authorID;Altere o prefixo que está salvo no sistema;no;$json[EMOJI;prefix]]
 $addSelectMenuOption[edit-bot;Linguagem;2-$authorID;Altere a linguagem que está salva no sistema;no;$json[EMOJI;lang]]
