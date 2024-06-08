@@ -1,3 +1,13 @@
 $removeButtons
 $description[# Cargo Automático
-> Aqui você podera editar toda a parte do meu sistema de cargo automatico, não se esqueça de configurar os cargos corretamente!]
+> Aqui você podera editar toda a parte do meu sistema de cargo automatico, não se esqueça de configurar os cargos corretamente!;1]
+$addField[Como Utlizar?;> Para adicionar mais de 1 cargo utilize "," para separalos!;no;1]
+$image[$json[BOT;banner];2]
+$color[$json[BOT;cor];1]
+$color[$json[BOT;cor];2]
+$thumbnail[$userAvatar[$botID];1]
+
+$addButton[no;on_off_cargoauto-$authorID;$if[$getUserVar[anti;$botID;$guildID]==ON]Ligar$elseif[$getUserVar[anti;$botID;$guildID]==OFF]Desligar$endif;$if[$getUserVar[anti;$botID;$guildID]==ON]success$elseif[$getUserVar[anti;$botID;$guildID]==OFF]danger$endif;no;]
+$addButton[no;addcargo-$authorID;Adicionar Cargo;secondary;no;]
+$addButton[no;removecargo-$authorID;Remover Cargo;secondary;no;]
+$addButton[no;bmvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
