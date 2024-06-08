@@ -1,5 +1,5 @@
 $description[# Botlist
-> Edite a botlist do servidor;1]
+> Aqui você podera editar toda a parte do meu sistema de botlist, não se esqueça de configurar os canais corretamente!;1]
 
 $image[$json[BOT;banner];2]
 $color[$json[BOT;cor];1]
