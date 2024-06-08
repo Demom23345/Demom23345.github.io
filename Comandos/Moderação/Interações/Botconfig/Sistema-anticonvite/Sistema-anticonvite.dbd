@@ -1,4 +1,4 @@
-$suppresErrors[]
+$suppressErrors[]
 $if[$getServerVar[anti]==ON]
 $if[$getChannelVar[anti;$channelID]==true]
 $if[$checkContains[$message;https://discord.gg/;https://discord.com/invite/;discord.gg/;discord.com/invite/;dsc.com/;https://dsc.com/]==true]
