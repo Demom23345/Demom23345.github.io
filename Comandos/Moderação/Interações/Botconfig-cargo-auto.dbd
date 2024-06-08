@@ -4,7 +4,7 @@ $description[# Cargo Automático
 $addField[Como Utlizar?;> Para adicionar mais de 1 cargo utilize "," para separalos!;no;1]
 $addField[Cargos Automáticos;
 > 
-$if[$getServerVar[cargo-auto]!=]<@&$getServerVar[cargo-auto]>$if[$getUserVar[cargo-auto;$serverOwner;$guildID]!=], <@&$getUserVar[cargo-auto;$serverOwner;$guildID]>$if[$getUserVar[cargo-auto;$botID;$guildID]!=], <@&$getUserVar[cargo-auto;$botID;$guildID]>$endif$endif$elseif[cargo-auto]!=]Nenhum cargo adicionado!$endif
+$if[$getServerVar[cargo-auto]!=]<@&$getServerVar[cargo-auto]>$if[$getUserVar[cargo-auto;$serverOwner;$guildID]!=], <@&$getUserVar[cargo-auto;$serverOwner;$guildID]>$endif$if[$getUserVar[cargo-auto;$botID;$guildID]!=], <@&$getUserVar[cargo-auto;$botID;$guildID]> $endif$elseif[$getServerVar[cargo-auto]]!=]Nenhum cargo adicionado! $endif
 
 ;no;1]
 $image[$json[BOT;banner];2]
