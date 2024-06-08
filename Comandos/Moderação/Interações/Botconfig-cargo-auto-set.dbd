@@ -2,6 +2,11 @@ $var[cargo;$findRole[$input[1]]] $ephemeral
 
 $onlyIf[$roleExists[$var[cargo]]==true;$json[EMOJI;errado] **|** <@$authorID>, o cargo ´$input[1]´ não existe ou não é um cargo, para pegar o ID de um cargo utilize `Q?roleinfo`]
 
+$onlyIf[$var[cargo]==$getUserVar[cargo-auto;$botID;$guildID];$json[EMOJI;errado] **|** <@$authorID>, você não pode adicionar o mesmo cargo.]
+$onlyIf[$var[cargo]==$getUserVar[cargo-auto;$serverowner;$guildID];$json[EMOJI;errado] **|** <@$authorID>, você não pode adicionar o mesmo cargo.]
+$onlyIf[$var[cargo]==$getServerVar[cargo-auto];$json[EMOJI;errado] **|** <@$authorID>, você não pode adicionar o mesmo cargo.]
+
+
 $if[$getServerVar[cargo-auto]==]
 $setServerVar[cargo-auto;$var[cargo]]
 $json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com succeso!
