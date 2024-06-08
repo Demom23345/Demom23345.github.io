@@ -12,7 +12,7 @@ $setUserVar[voto;$sum[$getUserVar[voto;$var[user];$guildID];1];$var[user];$guild
 $sendMessage[$json[EMOJI;vote] **|** <@$authorID>, votou no bot **$username[$var[user]]#$discriminator[$var[user]]** que agora tem um total de **$numberSeparator[$getUserVar[voto;$var[user];$guildID]] votos**
 > $json[EMOJI;time] **|** Volte em **4 horas.**
 > $json[EMOJI;coin] **|** Você ganhou **$random[50;100] quazcoins**!
-$json[BOT;banenr_voto];no]
+$json[BOT;banner_voto];no]
 
 
 
