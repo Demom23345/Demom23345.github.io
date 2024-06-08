@@ -1,1 +1,15 @@
 
+$description[# Ticket
+> Aqui você podera editar toda a parte do meu sistema de tickets, não se esqueça de configurar os canais corretamente!;1]
+
+$image[$json[BOT;banner];2]
+$color[$json[BOT;cor];1]
+$color[$json[BOT;cor];2]
+$thumbnail[$userAvatar[$botID];1]
+$removeButtons
+
+$addButton[no;bttext-$authorID;Painels;secondary;no;$json[EMOJI;painel]]
+$addButton[no;btcargo-$authorID;Cargos;secondary;no;$json[EMOJI;cargo]]
+$addButton[no;btcanal-$authorID;Canais;secondary;no;$json[EMOJI;canal]]
+$addButton[no;btoutro-$authorID;Outros;secondary;no;$json[EMOJI;outros]]
+$addButton[no;bbvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
