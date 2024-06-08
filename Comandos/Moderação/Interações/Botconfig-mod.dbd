@@ -1,0 +1,16 @@
+$description[# Moderação 
+> Aqui você podera editar toda a parte do meu sistema de moderação, não se esqueça de configurar os canais corretamente!;1]
+
+$image[$json[BOT;banner];2]
+$color[$json[BOT;cor];1]
+$color[$json[BOT;cor];2]
+$thumbnail[$userAvatar[$botID];1]
+$removeButtons
+
+$addButton[no;bmentrada-$authorID;Entrada;secondary;no;]
+$addButton[no;bmsaida-$authorID;Saida;secondary;no;]
+$addButton[no;bmanticonvite-$authorID;Anti-Convite;secondary;no;]
+$addButton[no;bmantifake-$authorID;Anti-Fake;secondary;no;]
+
+$addButton[yes;bmcargoauto-$authorID;Cargo Automático;secondary;no;]
+$addButton[no;bbvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
