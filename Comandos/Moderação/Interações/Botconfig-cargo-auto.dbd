@@ -1,7 +1,6 @@
 $removeButtons
 $description[# Cargo Automático
 > Aqui você podera editar toda a parte do meu sistema de cargo automatico, não se esqueça de configurar os cargos corretamente!;1]
-$addField[Como Utlizar?;> Para adicionar mais de 1 cargo utilize "," para separalos!;no;1]
 $addField[Cargos Automáticos ;
 > $if[$getServerVar[cargo-auto]!=]<@&$getServerVar[cargo-auto]>$elseif[$getServerVar[cargo-auto]!=]Nenhum cargo adicionado!$endif$if[$getUserVar[cargo-auto;$serverOwner;$guildID]!=], <@&$getUserVar[cargo-auto;$serverOwner;$guildID]>$endif$if[$getUserVar[cargo-auto;$botID;$guildID]!=], <@&$getUserVar[cargo-auto;$botID;$guildID]> $endif;no;1]
 $image[$json[BOT;banner];2]
