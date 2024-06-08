@@ -4,8 +4,8 @@ $onlyIf[$or[$isAdmin[$authorID]==true;$hasRole[$authorID;$getServerVar[cargo-sta
 $description[# Configurações
 >>> Bem Vindo ao menu de configuração! Aqui você pode personalizar todos os sistemas, desativar e ativar e muito mais.;1]
 $addField[$json[EMOJI;info] Informações;
-> $json[EMOJI;seta] Premium: $getServerVar[premium]
-> $json[EMOJI;seta] Patrocinador: $getServerVar[patrocinador];no;1]
+> $json[EMOJI;seta] Premium: ``$getServerVar[premium]``
+> $json[EMOJI;seta] Patrocinador: ``$getServerVar[patrocinador]``;no;1]
 $color[$json[BOT;cor];1] $thumbnail[$userAvatar[$botID];1] $color[$json[BOT;cor];2]
 $image[$json[BOT;banner];2]
 
