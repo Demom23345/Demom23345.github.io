@@ -1,19 +1,19 @@
 $title[$json[EMOJI;bot] | Comandos Botlist] $removeButtons
 $description[
-> **╭───** **addbot**
-> **├** Alternativos: `ab`, `pab`
-> **╰** Envia o painel de addbot ( adicionar bot ) no canal.
-> **╭───** **analisar**
-> **├** Alternativos: `analise`, `an`
-> **╰** Envie a nalise de um bot na queue.
-> **╭───** **queue**
-> **├** Alternativos: `q`
-> **╰** Veja a lista de espera de bots no servidor.
-> **╭───** **vote**
-> **├** Alternativos: `votar`, `v`
-> **╰** De um voto a um bot do servidor.
-> **╭───** **perfil**
-> **├** Alternativos: `profile`, `p`
-> **╰** Veja o perdil de um bot/developer do servidor.]
+> $json[EMOJI;e1]$json[EMOJI;e2]$json[EMOJI;e3] **addbot**
+> $json[EMOJI;e4]$json[EMOJI;e3] Alternativos: `ab`, `pab`
+> $json[EMOJI;e5] Envia o painel de addbot ( adicionar bot ) no canal.
+> $json[EMOJI;e1]$json[EMOJI;e2]$json[EMOJI;e3] **analisar**
+> $json[EMOJI;e4]$json[EMOJI;e3] Alternativos: `analise`, `an`
+> $json[EMOJI;e5] Envie a nalise de um bot na queue.
+> $json[EMOJI;e1]$json[EMOJI;e2]$json[EMOJI;e3] **queue**
+> $json[EMOJI;e4]$json[EMOJI;e3] Alternativos: `q`
+> $json[EMOJI;e5] Veja a lista de espera de bots no servidor.
+> $json[EMOJI;e1]$json[EMOJI;e2]$json[EMOJI;e3] **vote**
+> $json[EMOJI;e4]$json[EMOJI;e3] Alternativos: `votar`, `v`
+> $json[EMOJI;e5] De um voto a um bot do servidor.
+> $json[EMOJI;e1]$json[EMOJI;e2]$json[EMOJI;e3] **perfil**
+> $json[EMOJI;e4]$json[EMOJI;e3] Alternativos: `profile`, `p`
+> $json[EMOJI;e5] Veja o perdil de um bot/developer do servidor.]
 $footer[Meu prefixo atualmente é Q? $addTimestamp]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
