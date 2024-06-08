@@ -13,7 +13,7 @@ $endif
 $if[$message==3-$authorID]
 $setVar[2q;3;$authorID]
 $newModal[modal;Alterar Descrição]
-$addTextInput[1;short;NOVA DESCRIÇÃO;20;300;true;$getUserVar[desc;$getVar[mention;$authorID];$guildID];Escreva a nova descrição do seu bot aqui.]
+$addTextInput[1;paragraph;NOVA DESCRIÇÃO;20;300;true;$getUserVar[desc;$getVar[mention;$authorID];$guildID];Escreva a nova descrição do seu bot aqui.]
 $endif
 
 $if[$message==4-$authorID]
