@@ -3,6 +3,7 @@ $description[# Moderação
 $addField[Sistemas;
 > $if[$getServerVar[anti]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti]==OFF]$json[EMOJI;off]$endif Anti-Convite
 > $if[$getUserVar[anti;$serverOwner;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti;$serverOwner;$guildID]==OFF]$json[EMOJI;off]$endif Anti-Fake
+> $if[$getUserVar[anti;$botID;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti;$botID;$guildID]==OFF]$json[EMOJI;off]$endif Cargo Automático
 ;no;1]
 
 $image[$json[BOT;banner];2]
