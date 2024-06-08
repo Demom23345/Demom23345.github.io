@@ -7,7 +7,7 @@ $color[$json[BOT;cor];1]
 $color[$json[BOT;cor];2]
 $thumbnail[$userAvatar[$botID];1]
 
-$addButton[no;on_off_cargoauto-$authorID;$if[$getUserVar[anti;$botID;$guildID]==OFF]Ligar$elseif[$getUserVar[anti;$botID;$guildID]==ON]Desligar$endif;$if[$getUserVar[anti;$botID;$guildID]==ON]success$elseif[$getUserVar[anti;$botID;$guildID]==OFF]danger$endif;no;]
+$addButton[no;on_off_cargoauto-$authorID;$if[$getUserVar[anti;$botID;$guildID]==ON]Ligado$elseif[$getUserVar[anti;$botID;$guildID]==OFF]Desligado$endif;$if[$getUserVar[anti;$botID;$guildID]==ON]success$elseif[$getUserVar[anti;$botID;$guildID]==OFF]danger$endif;no;]
 $addButton[no;addcargo-$authorID;Adicionar Cargo;secondary;no;]
 $addButton[no;removecargo-$authorID;Remover Cargo;secondary;no;]
 $addButton[no;bmvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
