@@ -17,5 +17,5 @@ $elseif[$getUserVar[cargo-auto;$serverOwner;$guildID]==]
 $setUserVar[cargo-auto;$var[cargo];$serverOwner;$guildID]
 $json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com succeso!
 $else
-$json[EMOJI;errado] **|** <@$authorID>, o servidor alcançou o limite da cargos automáticos, para poder adicionar mais cargos compre a versão premium.
+$json[EMOJI;errado] **|** <@$authorID>, o servidor alcançou o limite da cargos automáticos, estamos trabalhando para podermos adicionar mais espaços para cargos.
 $endif
