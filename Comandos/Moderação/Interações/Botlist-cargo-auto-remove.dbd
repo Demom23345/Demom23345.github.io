@@ -1,0 +1,23 @@
+$var[cargo;$findRole[$input[1]]] $ephemeral
+
+$onlyIf[$roleExists[$var[cargo]]==true;$json[EMOJI;errado] **|** <@$authorID>, o cargo ´$input[1]´ não existe ou não é um cargo, para pegar o ID de um cargo utilize `Q?roleinfo`]
+
+$onlyIf[$or[$var[cargo]==$getUserVar[cargo-auto;$botID;$guildID];$var[cargo]==$getUserVar[cargo-auto;$serverOwner;$guildID];$var[cargo]==$getServerVar[cargo-auto]]==true;$json[EMOJI;errado] **|** <@$authorID>, esse cargo não está salvo no sistema de cargo automático.]
+
+
+$if[$getServerVar[cargo-auto]==$var[cargo]]
+$setServerVar[cargo-auto;$getUserVar[cargo-auto;$botID;$guildID]]
+$setUserVar[cargo-auto;$getUserVar[cargo-auto;$serverOwner;$guildID];$botID;$guildID]
+$setUserVar[cargo-auto;;$serverOwner;$guildID]
+$json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> foi removido com succeso!
+  
+$elseif[$getUserVar[cargo-auto;$botID;$guildID]==$var[cargo]]
+$setUserVar[cargo-auto;$getUserVar[cargo-auto;$serverOwner;$guildID];$botID;$guildID]
+$setUserVar[cargo-auto;;$serverOwner;$guildID]
+$json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> foi removido com succeso!
+  
+$elseif[$getUserVar[cargo-auto;$serverOwner;$guildID]==$var[cargo]]
+$setUserVar[cargo-auto;;$serverOwner;$guildID]
+$json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> foi removido com succeso!
+  
+$endif
