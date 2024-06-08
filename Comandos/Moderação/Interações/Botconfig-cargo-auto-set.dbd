@@ -3,7 +3,7 @@ $var[cargo;$findRole[$input[1]]] $ephemeral
 $onlyIf[$roleExists[$var[cargo]]==true;$json[EMOJI;errado] **|** <@$authorID>, o cargo ´$input[1]´ não existe ou não é um cargo, para pegar o ID de um cargo utilize `Q?roleinfo`]
 
 $onlyIf[$var[cargo]!=$getUserVar[cargo-auto;$botID;$guildID];$json[EMOJI;errado] **|** <@$authorID>, você não pode adicionar o mesmo cargo.]
-$onlyIf[$var[cargo]!=$getUserVar[cargo-auto;$serverowner;$guildID];$json[EMOJI;errado] **|** <@$authorID>, você não pode adicionar o mesmo cargo.]
+$onlyIf[$var[cargo]!=$getUserVar[cargo-auto;$serverOwner;$guildID];$json[EMOJI;errado] **|** <@$authorID>, você não pode adicionar o mesmo cargo.]
 $onlyIf[$var[cargo]!=$getServerVar[cargo-auto];$json[EMOJI;errado] **|** <@$authorID>, você não pode adicionar o mesmo cargo.]
 
 
@@ -13,8 +13,8 @@ $json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com su
 $elseif[$getUserVar[cargo-auto;$botID;$guildID]==]
 $setUserVar[cargo-auto;$var[cargo];$botID;$guildID]
 $json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com succeso!
-$elseif[$getUserVar[cargo-auto;$serverowner;$guildID]==]
-$setUserVar[cargo-auto;$var[cargo];$serverowner;$guildID]
+$elseif[$getUserVar[cargo-auto;$serverOwner;$guildID]==]
+$setUserVar[cargo-auto;$var[cargo];$serverOwner;$guildID]
 $json[EMOJI;certo] **|** <@$authorID>, o cargo <@&$var[cargo]> adicionado com succeso!
 $else
 $json[EMOJI;errado] **|** <@$authorID>, o servidor alcançou o limite da cargos automáticos, para poder adicionar mais cargos compre a versão premium.
