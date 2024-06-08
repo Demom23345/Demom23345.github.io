@@ -1,11 +1,8 @@
 
 $title[$json[EMOJI;coin] | Comandos Moderação] $removeButtons
 $description[
-> **╭───** **clear**
-> **├** Alternativos: `limpar`, `cleam`
-> **╰** Limpe as mensagens no chat.
-> **╭───** **lock**
-> **├** Alternativos: `l`, `bloquear`
-> **╰** Bloqueie um canal de texto para que nao enviem mensagens .]
+> $json[EMOJI;e1] **botconfig**
+> $json[EMOJI;e2] Alternativos; ``coonfigbot, gerenciar``
+> $json[EMOJI;e3] ``Configure qualquer um dos meus sistemas no seu servidor``]
 $footer[Meu prefixo atualmente é Q? $addTimestamp]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
