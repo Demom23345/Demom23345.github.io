@@ -35,7 +35,7 @@ $addField[$json[EMOJI;user] Informações do Bot;
 > $json[EMOJI;seta] Desenvolvedor: ``@$username[$getUserVar[dono;$var[user];$guildID]]``
 ;no;1]
 $addField[$json[EMOJI;bot] Estatísticas do Bot;
-> $json[EMOJI;seta] Votos: ``$numberSeparator[$getVar[voto;$var[user]]]``
+> $json[EMOJI;seta] Votos: ``$numberSeparator[$getUserVar[voto;$var[user];$var[user];$guildID]]``
 ;no;1]
 $addField[$json[EMOJI;desc] Descrição;
 > $getUserVar[desc;$var[user];$guildID];no;1]
