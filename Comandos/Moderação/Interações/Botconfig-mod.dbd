@@ -13,4 +13,5 @@ $addButton[no;bmanticonvite-$authorID;Anti-Convite;secondary;no;]
 $addButton[no;bmantifake-$authorID;Anti-Fake;secondary;no;]
 
 $addButton[yes;bmcargoauto-$authorID;Cargo Automático;secondary;no;]
+$addButton[no;bmoutros-$authorID;Outros;secondary;no;]
 $addButton[no;bbvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
