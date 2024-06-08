@@ -1,0 +1,2 @@
+$newModal[ser_categoria_ticket;Categoria Ticket]
+$addTextinput[1;short;ID DA CATEGORIA;0;300;true;;Coloque o ID da categoria aqui]
