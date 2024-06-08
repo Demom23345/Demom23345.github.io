@@ -1,0 +1,3 @@
+$if[$getUserVar[anti;$botID;$guildID]==ON]
+$roleGrant[$authorID;+$getServerVar[cargo-auto]]
+$endif
