@@ -1,5 +1,5 @@
 $if[$getUserVar[anti;$botID;$guildID]==ON]
-$var[cargo1;$getServerVar[carg-auto]]
+$var[cargo1;$getServerVar[cargo-auto]]
 $var[cargo2;$getUserVar[cargo-auto;$serverOwner;$guildID]]
 $var[cargo3;$getUserVar[cargo-auto;$botID;$guildID]]
 
