@@ -1,4 +1,4 @@
-$var[cargo;$findRole[$inpurt[1]]]
+$var[cargo;$findRole[$input[1]]] $ephemeral
 
 $onlyIf[$roleExists[$var[cargo]]==true;$json[EMOJI;errado] **|** <@$authorID>, o cargo ´$input[1]´ não existe ou não é um cargo, para pegar o ID de um cargo utilize `Q?roleinfo`]
 
