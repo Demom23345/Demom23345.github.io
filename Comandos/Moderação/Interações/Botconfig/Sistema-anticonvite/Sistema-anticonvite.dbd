@@ -5,7 +5,7 @@ $if[$checkContains[$message;https://discord.gg/;https://discord.com/invite/;disc
 $if[$getServerVar[message-on-off]==ON]
 $replaceText[$replaceText[$replaceText[$getUserVar[message-on-off;$botID;$guilID];{menção};<@$authorID>;-1];{username};$username;-1];{nickname};$nickname;-1]
 $endif
-$deletecommand
+
 $endif
 $endif
 $endif
