@@ -59,10 +59,10 @@ $elseif[$customID==bmcargoauto-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig-cargo-auto.dbd
 
 $elseif[$customID==bmvoltar-$authorID]
-https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Botconfig-mod.dbd
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig-mod.dbd
 
 $elseif[$customID==on_off_cargoauto-$authorID]
-https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Botconfig-cargo-auto-on-off.dbd
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig-cargo-auto-on-off.dbd
 
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Não-interação.dbd
