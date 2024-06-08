@@ -1,10 +1,12 @@
+
 $if[$getServerVar[anti]==ON]
 $if[$getChannelVar[anti;$channelID]==true]
 $if[$checkContains[$message;https://discord.gg/;https://discord.com/invite/;discord.gg/;discord.com/invite/;dsc.com/;https://dsc.com/]==true]
+$replyIn[5s]
 $deletecommand
 $endif
 $if[$getServerVar[message-on-off]==ON]
-$replaceText[$replaceText[$replaceText[$getUserVar[message-on-off];{menção};<@$authorID>;-1];{username};$username;-1];{nickname};$nickname;-1]
+$replaceText[$replaceText[$replaceText[$getUserVar[message-on-off;$botID;$guilID];{menção};<@$authorID>;-1];{username};$username;-1];{nickname};$nickname;-1]
 $endif
 $endif
 $endif
