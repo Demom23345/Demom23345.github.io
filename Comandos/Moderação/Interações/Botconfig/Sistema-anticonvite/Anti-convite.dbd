@@ -1,4 +1,12 @@
 $removeButtons
 $description[# Anti-Convite
 > Aqui você podera editar toda a parte do meu sistema de anti-convite, não se esqueça de configurar os canais corretamente!;1]
+$image[$json[BOT;banner];2]
+$color[$json[BOT;cor];1]
+$color[$json[BOT;cor];2]
+$thumbnail[$userAvatar[$botID];1]
 
+$addButton[no;on_off_anticonvite-$authorID;$if[$getUserVar[anti;$serverOwner;$guildID]==ON]Ligado$elseif[$getUserVar[anti;$serverOwner;$guildID]==OFF]Desligado$endif;$if[$getUserVar[anti;$serverOwner;$guildID]==ON]success$elseif[$getUserVar[anti;$serverOwner;$guildID]==OFF]danger$endif;no;]
+$addButton[no;on_off_textoconvite-$authorID;Ativar Texto;secondary;no;]
+$addButton[no;removecargo-$authorID;Remover Cargo;secondary;no;]
+$addButton[no;bacvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
