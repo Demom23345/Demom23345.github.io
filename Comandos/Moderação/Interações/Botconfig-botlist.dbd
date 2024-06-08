@@ -4,7 +4,7 @@ $description[# Botlist
 $image[$json[BOT;banner];2]
 $color[$json[BOT;cor];1]
 $color[$json[BOT;cor];2]
-$thmbnail[$userAvatar[$botID];1]
+$thumbnail[$userAvatar[$botID];1]
 $removeButtons
 
 $addButton[no;bb-text-$authorID;Painels;secondary;no;$json[EMOJI;painel]]
