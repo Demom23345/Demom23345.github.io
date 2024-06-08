@@ -1,4 +1,10 @@
 $if[$getUserVar[anti;$botID;$guildID]==ON]
-$var[cargos;$replaceText[$getServerVar[cargo-auto];,;\;+]
-$roleGrant[$authorID;+$var[cargos]]
+$var[cargo1;$getServerVar[carg-auto]]
+$var[cargo2;$getUserVar[cargo-auto;$serverOwner;$guildID]]
+$var[cargo3;$getUserVar[cargo-auto;$botID;$guildID]]
+
+
+$if[$var[cargo1]!=]$roleGrant[$authorID;+$var[cargo1]]$endif
+$if[$var[cargo2]!=]$roleGrant[$authorID;+$var[cargo2]]$endif
+$if[$var[cargo3]!=]$roleGrant[$authorID;+$var[cargo3]]$endif
 $endif
