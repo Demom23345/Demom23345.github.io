@@ -113,6 +113,24 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%
 $elseif[$customID==bb_voltar-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig-botlist.dbd
 
+$elseif[$customID==canal_correios-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Modal-canal-correios.dbd
+
+$elseif[$customID==canal_logs_bots-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Modal-canal-logs-bot.dbd
+
+$elseif[$customID==canal_analises-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Modal-canal-analises.dbd
+
+$elseif[$customID==set_canal_correios]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Setar-canal-correios.dbd
+
+$elseif[$customID==set_canal_logs_bots]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Setar-canal-logs-bots.dbd
+
+$elseif[$customID==set_canal_analises]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Setar-canal-analises.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Não-interação.dbd
 
