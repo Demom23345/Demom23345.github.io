@@ -1,1 +1,16 @@
 
+$removeButtons
+$description[# Canais
+> Canal Correios: $if[$getServerVar[canal-botlist]==]`Não configurado.`$elseif[$getServerVar[canal-botlist]!=]<#$getServerVar[canal-botlist]>$endif
+> Canal Logs Bots: $if[$getUserVar[canal-botlist;$botID;$guildID]==]`Não configurado.`$elseif[$getUserVar[canal-botlist;$botID;$guildID]!=]<#$getUserVar[canal-botlist;$botID;$guildID]>$endif
+> Canal Analises: $if[$getUserVar[canal-botlist;$serverOwner;$guildID]==]`Não configurado.`$elseif[$getUserVar[canal-botlist;$serverOwner;$guildID]!=]<#$getUserVar[canal-botlist;$serverOwner;$guildID]>$endif
+;1]
+$image[$json[BOT;banner];2]
+$color[$json[BOT;cor];1]
+$color[$json[BOT;cor];2]
+$thumbnail[$userAvatar[$botID];1]
+
+$addButton[no;canal_correios-$authorID;Canal Correios;secondary;no;]
+$addButton[no;canal_logs_bots-$authorID;Canal Logs Bots;secondary;no;]
+$addButton[no;canal_analises-$authorID;Canal Analises;secondary;no;]
+$addButton[no;bbvoltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
