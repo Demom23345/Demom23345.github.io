@@ -1,5 +1,6 @@
 $var[user;$replaceText[$findUser[$message[2]];@me;$authorID;-1]]
 
+$onlyIf[$message[2]!=;$json[EMOJI;errado] **|** <@$authorID>, você esqueveu de mencionar um bot.]
 $onlyIf[$isBot[$var[user]]==true;$json[EMOJI;errado] **|** <@$authorID>, o <@$var[user]> não é um bot.]
 $onlyIf[$getUserVar[aprovado;$var[user];$guildID]==true;**$json[EMOJI;errado] |** <@$authorID>, esse bot não foi registrado no meu sistema.]
 
