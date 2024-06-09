@@ -1,0 +1,2 @@
+$newModal[set_cargo_bot_analisado;Cargo Bot Analisado]
+$addTextInput[1;short;ID DO CARGO;0;300;true;;Coloque o ID do cargo aqui]
