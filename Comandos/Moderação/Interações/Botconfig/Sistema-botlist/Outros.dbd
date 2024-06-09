@@ -1,12 +1,12 @@
 $removeButtons
 $description[# Outros
-$if[$getServerVar[anti-botlist]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-botlist]==OFF]$json[EMOJI;off]$endif Anti-Slash
+$if[$getServerVar[anti-botlist]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-botlist]==OFF]$json[EMOJI;off]$endif ***Anti-Slash***
 > Bloqueie automaticamente todos os bots enviados na analise com o gatilho em slash.
-$if[$getServerVar[anti-ticket]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-ticket]==OFF]$json[EMOJI;off]$endif Anti-Prefixo
+$if[$getServerVar[anti-ticket]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-ticket]==OFF]$json[EMOJI;off]$endif ***Anti-Prefixo***
 > Bloqueie automaticamente todos os bots enviados na analise com o gatilho em prefixo.
-$if[$getUserVar[anti-botlist;$botID;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$botID;$guildID]==OFF]$json[EMOJI;off]$endif Alto Verificação
+$if[$getUserVar[anti-botlist;$botID;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$botID;$guildID]==OFF]$json[EMOJI;off]$endif ***Alto Verificação***
 > Bloqueie automaticamente bots com uma derteminada quantidade de dias da criação.
-$if[$getUserVar[anti-botlist;$serverOwner;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$serverOwner;$guildID]==OFF]$json[EMOJI;off]$endif Tópicos
+$if[$getUserVar[anti-botlist;$serverOwner;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$serverOwner;$guildID]==OFF]$json[EMOJI;off]$endif ***Tópicos***
 > Analise os bots em topicos.
 ;1]
 $image[$json[BOT;banner];2]
