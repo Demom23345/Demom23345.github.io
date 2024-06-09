@@ -1,2 +1,2 @@
-$newModal[set_canal_correios;Canal Logs]
+$newModal[set_canal_correios;Canal Correios]
 $addTextInput[1;short;ID DO CANAL;0;300;true;;Coloque o ID do canal aqui]
