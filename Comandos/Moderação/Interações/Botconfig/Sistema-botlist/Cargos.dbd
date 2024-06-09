@@ -3,7 +3,7 @@ $description[# Cargos
 > Bot em Analise: $if[$getServerVar[cargo-botlist]==]`Não configurado.`$elseif[$getServerVar[cargo-botlist]!=]<@&$getServerVar[cargo-botlist]>$endif
 > Bot Analisado: $if[$getUserVar[cargo-botlist;$botID;$guildID]==]`Não configurado.`$elseif[$getUserVar[cargo-botlist;$botID;$guildID]!=]<@&$getUserVar[cargo-botlist;$botID;$guildID]>$endif
 > Desenvolvedor: $if[$getUserVar[cargo-botlist;$serverOwner;$guildID]==]`Não configurado.`$elseif[$getUserVar[cargo-botlist;$serverOwner;$guildID]!=]<@&$getUserVar[cargo-botlist;$serverOwner;$guildID]>$endif
-;1]
+> Analisadores: $if[$getUserVar[cargo-ticket;$botID;$guildID]==]`Não configurado.`$elseif[$getUserVar[cargo-ticket;$botID;$guildID]!=]<@&$getUserVar[cargo-ticket;$botID;$guildID]>$endif;1]
 $image[$json[BOT;banner];2]
 $color[$json[BOT;cor];1]
 $color[$json[BOT;cor];2]
