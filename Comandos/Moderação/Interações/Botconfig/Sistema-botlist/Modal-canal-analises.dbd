@@ -1,0 +1,2 @@
+$newModal[set_canal_analises;Canal Analises]
+$addTextInput[1;short;ID DO CANAL;0;300;true;;Coloque o ID do canal aqui]
