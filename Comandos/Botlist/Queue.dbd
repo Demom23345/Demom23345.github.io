@@ -1,5 +1,5 @@
 $onlyIf[$guildID!=;**$json[EMOJI;errado] |** <@$authorID>, é impossível utilizar esse comando nas minhas mensagens diretas, esse comando só pode ser usado em **servidores**.]
-$onlyIf[$or[$hasRole[$authorID;$getServerVar[cargo-analisadores]]==true;$serverOwner==$authorID]==true;**$json[EMOJI;errado~] |** <@$authorID>, você não tem permissão de utilizar esse comando apenas a equipe da staff pode!]
+$onlyIf[$or[$hasRole[$authorID;$getServerVar[cargo-ticket]]==true;$serverOwner==$authorID]==true;**$json[EMOJI;errado~] |** <@$authorID>, você não tem permissão de utilizar esse comando apenas a equipe da staff pode!]
 
 $description[# Queue
 $if[$getServerVar[1q]!=]`( 1 )` $getServerVar[1q]$endif
