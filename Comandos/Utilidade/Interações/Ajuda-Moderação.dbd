@@ -2,7 +2,7 @@
 $title[$json[EMOJI;coin] | Comandos Moderação] $removeButtons
 $description[
 > $json[EMOJI;e1] **botconfig**
-> $json[EMOJI;e2] Alternativos; ``coonfigbot, gerenciar``
+> $json[EMOJI;e2] Alternativos: ``configbot, gerenciar``
 > $json[EMOJI;e3] ``Configure qualquer um dos meus sistemas no seu servidor``]
 $footer[Meu prefixo atualmente é Q? $addTimestamp]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
