@@ -6,4 +6,4 @@ $suppressErrors[$json[EMOJI;errado] **|** <@$authorID>, o canal `$input[1]` não
 $channelSendMessage[$var[canal];$json[EMOJI;certo] **|** <@$authorID>, canal setado com sucesso!]
 $json[EMOJI;certo] **|** <@$authorID>, canal setado com sucesso!
 
-$setUserVar[canal-botlist;$var[canal];$serverOwner;$guildID]
+$setUserVar[canal-botlist;$var[canal];$botID;$guildID]
