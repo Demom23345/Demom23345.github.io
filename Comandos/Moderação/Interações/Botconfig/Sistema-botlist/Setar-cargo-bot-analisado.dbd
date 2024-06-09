@@ -1,0 +1,7 @@
+$ephemeral
+$var[cargo;$findRole[$input[1]]]
+$onlyIf[$roleExists[$var[canal]]==true;$json[EMOJI;errado] **|** <@$authorID>, o cargo digitado `$input[1]` não existe, para pegar o ID do cargo use `Q?rolelinfo`]
+
+$json[EMOJI;certo] **|** <@$authorID>, cargo setado com sucesso!
+
+$setUserVar[cargo-botlist;$var[cargo];$botID;$guildID]
