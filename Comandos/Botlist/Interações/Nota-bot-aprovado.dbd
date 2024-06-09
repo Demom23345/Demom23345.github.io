@@ -1,6 +1,6 @@
-$var[canal-correios;$getServerVar[canal-correios]]
-$var[canal-logs;$getServerVar[canal-logs-botlist]]
-$var[cargo-analista;$getServerVar[cargo-analisadores]]
+$var[canal-correios;$getServerVar[canal-botlist]]
+$var[canal-logs;$getUserVar[canal-botlist];$botID;$guildID]]
+$var[cargo-analista;$getUserVar[cargo-ticket;$botID;$guildID]]
 
 **$json[EMOJI;certo] |** <@$authorID>, análise enviada com sucesso!
 
@@ -48,5 +48,5 @@ $setUserVar[limit;$sum[$getUserVar[limit;$var[dono];$guildID];1];$var[dono];$gui
 
 $changeUsernameWithID[$getVar[mention;$authorID];$cropText[[$getUserVar[prefix;$getVar[mention;$authorID];$guildID]\] $username[$getVar[mention;$authorID]] by: $username[$getUserVar[dono;$getVar[mention;$authorID];$guildID]];29;...]]
 $roleGrant[$getVar[mention;$authorID];+$getServerVar[cargo-bot-verificado]]
-$roleGrant[$var[dono];+$getServerVar[cargo-dev]]
-$roleGrant[$authorID;-$getServerVar[cargo-bot-em-analise]]
+$roleGrant[$var[dono];+$getUserVar[cargo-botlist;$serverOwner;$guildID]]
+$roleGrant[$getVar[mention;$authorID];-$getServerVar[cargo-botlist]]
