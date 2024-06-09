@@ -12,8 +12,9 @@ $description[
 > $json[EMOJI;e1] **vote**
 > $json[EMOJI;e2] Alternativos: `votar`, `v`
 > $json[EMOJI;e3] `De um voto a um bot do servidor.`
-> $json[EMOJI;e1] **perfil**
-> $json[EMOJI;e2] Alternativos: `profile`, `p`
-> $json[EMOJI;e3] `Veja o perdil de um bot/developer do servidor.`]
+> $json[EMOJI;e1] **desenvolvedor**
+> $json[EMOJI;e2] Alternativos: `developer`, `dev`
+> $json[EMOJI;e3] `Veja o perdil de um desenvolvedor do servidor.`]
 $footer[Meu prefixo atualmente é Q? $addTimestamp]
 $thumbnail[$userAvatar[$botID]] $color[$json[BOT;cor]]
+
