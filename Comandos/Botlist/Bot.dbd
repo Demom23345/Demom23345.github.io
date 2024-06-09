@@ -1,0 +1,33 @@
+$var[user;$replaceText[$findUser[$message[2]];@me;$authorID;-1]]
+
+$onlyIf[$isBot[$var[user]]==true;$json[EMOJI;errado] **|** <@$authorID>, o <@$var[user]> não é um bot.]
+$onlyIf[$getUserVar[aprovado;$var[user];$guildID]==true;**$json[EMOJI;errado] |** <@$authorID>, esse bot não foi registrado no meu sistema.]
+
+$author[Perfil do Bot;1] $authorIcon[$userAvatar[$var[user]];1]
+$description[# [$username[$var[user]]\](https://discord.com/users/$var[user]);1]
+$addField[$json[EMOJI;user] Informações do Bot;
+> $json[EMOJI;seta] Prefixo: ``$getUserVar[prefix;$var[user];$guildID]``
+> $json[EMOJI;seta] Linguagem: ``$getUserVar[lang;$var[user];$guildID]``
+> $json[EMOJI;seta] Desenvolvedor: ``@$username[$getUserVar[dono;$var[user];$guildID]]``
+;no;1]
+$addField[$json[EMOJI;bot] Estatísticas do Bot;
+> $json[EMOJI;seta] Votos: ``$numberSeparator[$getUserVar[voto;$var[user];$guildID]]``
+;no;1]
+$addField[$json[EMOJI;desc] Descrição;
+> $getUserVar[desc;$var[user];$guildID];no;1]
+
+$color[$getUserVar[cor-perfil;$var[user];$guildID];1]
+$color[$getUserVar[cor-perfil;$var[user];$guildID];2]
+$image[$getUserVar[banner-perfil;$var[user];$guildID];2]
+$thumbnail[$userAvatar[$var[user]];1]
+
+$if[$authorID==$getUserVar[dono;$var[user];$guildID]]
+$setVar[mention;$var[user];$authorID]
+$newSelectMenu[edit-bot;1;1;› Edite as Informações do seu Bot]
+$addSelectMenuOption[edit-bot;Prefixo;1-$authorID;Altere o prefixo que está salvo no sistema;no;$json[EMOJI;prefix]]
+$addSelectMenuOption[edit-bot;Linguagem;2-$authorID;Altere a linguagem que está salva no sistema;no;$json[EMOJI;lang]]
+$addSelectMenuOption[edit-bot;Descrição;3-$authorID;Altere a descrição do seu bot;no;$json[EMOJI;desc]]
+$addSelectMenuOption[edit-bot;Cor;4-$authorID;Altere a cor do perfil do bot;no;$json[EMOJI;color]]
+$addSelectMenuOption[edit-bot;Banner;5-$authorID;Altere o banner que está no perfil do bot;no;$json[EMOJI;image]]
+$endif
+
