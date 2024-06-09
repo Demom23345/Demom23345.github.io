@@ -1,3 +1,5 @@
+$removeButtons[$messageID]
+
 $var[canal-correios;$getServerVar[canal-botlist]]
 $var[canal-logs;$getUserVar[canal-botlist;$botID;$guildID]]
 $var[cargo-analista;$getUserVar[cargo-ticket;$botID;$guildID]]
