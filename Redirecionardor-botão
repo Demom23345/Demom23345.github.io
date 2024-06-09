@@ -161,6 +161,18 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%
 $elseif[$customID==bboutro-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Outros.dbd
 
+$elseif[$customID==anti_slash_on_off-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Anti-slash.dbd
+
+$elseif[$customID==anti_prefixo_on_off-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Anti-prefixo.dbd
+
+$elseif[$customID==alto_verificação_on_off-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Alto-verifica%C3%A7%C3%A3o.dbd
+
+$elseif[$customID==topico_on_off-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Topico.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Não-interação.dbd
 
