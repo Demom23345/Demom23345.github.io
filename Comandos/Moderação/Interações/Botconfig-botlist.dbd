@@ -1,5 +1,7 @@
 $description[# Botlist
 > Aqui você podera editar toda a parte do meu sistema de botlist, não se esqueça de configurar os canais corretamente!;1]
+$addField[Sistemas;
+> 
 
 $image[$json[BOT;banner];2]
 $color[$json[BOT;cor];1]
