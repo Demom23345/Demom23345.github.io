@@ -1,1 +1,10 @@
+$onlyIf[$guildID!=;**$json[EMOJI;errado] |** <@$authorID>, é impossível utilizar esse comando nas minhas mensagens diretas, esse comando só pode ser usado em **servidores**.]
+$onlyIf[$or[$isAdmin[$authorID]==true;$hasRole[$authorID;$getServerVar[cargo-staff]]]==true;$json[EMOJI;errado] **|** <@$authorID>, voce nao tem permissão de utilizar esse comando aqui no servidor.]
+
+$title[$getChannelVar[titulo]]
+$description[$getChannelVar[desc]]
+$footer[$getChannelVar[footer]]
+$color[$getChannelVar[cor-perfil]]
+$image[$getChannelVar[banner-perfil]]
+
 
