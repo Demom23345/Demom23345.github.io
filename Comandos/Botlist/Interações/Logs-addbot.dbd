@@ -5,6 +5,8 @@ $onlyIf[$userExists[$input[id]]==true;**$json[EMOJI;errado] |** <@$authorID>, o 
 $onlyIf[$isBot[$input[id]]==true;**$json[EMOJI;errado] |** <@$authorID>, o bot (`$input[id]`) não existe ou não é um bot envie novamente.]
 $onlyIf[$getUserVar[limit;$authorID;$guildID]<=$getServerVar[limite];**$json[EMOJI;errado] |** <@$authorID>, você já alcançou o limite de bot permitido no servidor.]
 
+$json[EMOJI;certo] **|** <@$authorID>, seu bot foi enviado com sucesso!
+
 $var[canal-correios;$getServerVar[canal-botlist]]
 $var[canal-logs;$getUserVar[canal-botlist;$botID;$guildID]]
 $var[cargo-analista;$getUserVar[cargo-ticket;$botID;$guildID]]
