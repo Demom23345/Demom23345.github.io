@@ -1,3 +1,5 @@
+$onlyIf$getServerVar[premium]==Sim.;$json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.]
+
 $if[$getUserVar[anti-botlist;$botID;$guildID]==ON]
 $setUserVar[anti-botlist;OFF;$botID;$guildID]
 
