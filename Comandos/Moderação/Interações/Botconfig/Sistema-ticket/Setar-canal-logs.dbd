@@ -1,5 +1,9 @@
 $ephemeral
-$onlyIf[$isChannel[$input[1]]==true;$json[EMOJI;errado] **|** <@$authorID>, o canal digitado `$input[1]` não é um canal.]
-$onlyIf[$channelExists[channel ID]==true;$json[EMOJI;errado] **|** <@$authorID>, o canal digitado `$input[1]` não existe.]
+$var[canal;$findChannel[$input[1]]]
+$onlyIf[$isChannel[$var[canal]]==true;$json[EMOJI;errado] **|** <@$authorID>, o canal digitado `$input[1]` não é um canal, para pegar o ID do canal use `Q?channelinfo`]
+$onlyIf[$channelExists[$var[canal]]==true;$json[EMOJI;errado] **|** <@$authorID>, o canal digitado `$input[1]` não existe, para pegar o ID do canal use `Q?channelinfo`]
 
-$set
+$suppressErrors[$json[EMOJI;errado] **|** <@$authorID>, o canal `$input[1]` não é um canal valido, para pegar o ID do canal use `Q?channelinfo`]
+$sendMessage[$json[EMOJI;certo] **|** <@$authorID>, canal setado com sucesso!]
+
+$setUserVar[canal-ticket;$var[canal];$botID;$guildID]
