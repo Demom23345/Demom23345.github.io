@@ -2,6 +2,7 @@ $description[# Botlist
 > Aqui você podera editar toda a parte do meu sistema de botlist, não se esqueça de configurar os canais corretamente!;1]
 $addField[Sistemas;
 > $if[$getServerVar[anti-botlist]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-botlist]==OFF]$json[EMOJI;off]$endif Anti-Slash
+> $if[$getServerVar[anti-ticket]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-ticket]==OFF]$json[EMOJI;off]$endif Anti-Prefixo
 > $if[$getUserVar[anti-botlist;$botID;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$botID;$guildID]==OFF]$json[EMOJI;off]$endif Alto Verificação
 > $if[$getUserVar[anti-botlist;$serverOwner;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$serverOwner;$guildID]==OFF]$json[EMOJI;off]$endif Tópicos
 ;no]
