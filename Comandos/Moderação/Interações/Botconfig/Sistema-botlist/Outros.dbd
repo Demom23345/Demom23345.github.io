@@ -1,1 +1,21 @@
+$removeButtons
+$description[# Outros
+$if[$getServerVar[anti-botlist]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-botlist]==OFF]$json[EMOJI;off]$endif Anti-Slash
+> Bloqueie automaticamente todos os bots enviados na analise com o gatilho em slash.
+$if[$getServerVar[anti-ticket]==ON]$json[EMOJI;on]$elseif[$getServerVar[anti-ticket]==OFF]$json[EMOJI;off]$endif Anti-Prefixo
+> Bloqueie automaticamente todos os bots enviados na analise com o gatilho em prefixo.
+$if[$getUserVar[anti-botlist;$botID;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$botID;$guildID]==OFF]$json[EMOJI;off]$endif Alto Verificação
+> Bloqueie automaticamente bots com uma derteminada quantidade de dias da criação.
+$if[$getUserVar[anti-botlist;$serverOwner;$guildID]==ON]$json[EMOJI;on]$elseif[$getUserVar[anti-botlist;$serverOwner;$guildID]==OFF]$json[EMOJI;off]$endif Tópicos
+> Analise os bots em topicos.
+;1]
+$image[$json[BOT;banner];2]
+$color[$json[BOT;cor];1]
+$color[$json[BOT;cor];2]
+$thumbnail[$userAvatar[$botID];1]
 
+$addButton[no;anti_slash_on_off-$authorID;Anti-Slash;secondary;no;]
+$addButton[no;anti_prefixo_on_off-$authorID;Anti-Prefixo;secondary;no;]
+$addButton[no;alto_verificação_on_off-$authorID;Alto Verificação;secondary;no;]
+$addButton[no;topico_on_off-$authorID;Tópico;secondary;no;]
+$addButton[no;bb_voltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
