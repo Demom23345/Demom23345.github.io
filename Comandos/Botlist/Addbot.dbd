@@ -1,5 +1,5 @@
 $onlyIf[$guildID!=;**$json[EMOJI;errado] |** <@$authorID>, é impossível utilizar esse comando nas minhas mensagens diretas, esse comando só pode ser usado em **servidores**.]
-$onlyIf[$or[$isAdmin[$authorID]==true;$hasRole[$authorID;$getServerVar[cargo-ticket]]]==true;$json[EMOJI;errado] **|** <@$authorID>, voce nao tem permissão de utilizar esse comando aqui no servidor.]
+$onlyIf[$or[$isAdmin[$authorID]==true;$hasRole[$authorID;$getUserVar[cargo-ticket;$botID;$guildID]]]==true;$json[EMOJI;errado] **|** <@$authorID>, voce nao tem permissão de utilizar esse comando aqui no servidor.]
 
 
 $description[# Adicionar Bot
