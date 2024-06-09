@@ -134,6 +134,24 @@ https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%
 $elseif[$customID==bbcargo-$authorID]
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Cargos.dbd
 
+$elseif[$customID==cargo_bot_em_analise-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Modal-cargo-bot-em-analise.dbd
+
+$elseif[$customID==cargo_bot_analisado-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Modal-cargo-bot-analisado.dbd
+
+$elseif[$customID==cargo_developer-$authorID]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Modal-cargo-developer.dbd
+
+$elseif[$customID==set_cargo_bot_em_analise]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Setar-cargo-bot-em-analise.dbd
+
+$elseif[$customID==set_cargo_bot_analisado]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Setar-cargo-bot-analisado.dbd
+
+$elseif[$customID==set_cargo_developer]
+https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Modera%C3%A7%C3%A3o/Intera%C3%A7%C3%B5es/Botconfig/Sistema-botlist/Setar-cargo-developer.dbd
+
 $else
 https://raw.githubusercontent.com/Demom23345/Quazar-bot/main/Comandos/Utilidade/Intera%C3%A7%C3%B5es/Não-interação.dbd
 
