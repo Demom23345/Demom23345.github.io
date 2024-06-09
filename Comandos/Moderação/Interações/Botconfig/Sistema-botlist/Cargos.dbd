@@ -1,0 +1,15 @@
+$removeButtons
+$description[# Cargos
+> Bot em Analise: $if[$getServerVar[cargo-botlist]==]`Não configurado.`$elseif[$getServerVar[cargo-botlist]!=]<@&$getServerVar[cargo-botlist]>$endif
+> Bot Analisado: $if[$getUserVar[cargo-botlist;$botID;$guildID]==]`Não configurado.`$elseif[$getUserVar[cargo-botlist;$botID;$guildID]!=]<@&$getUserVar[cargo-botlist;$botID;$guildID]>$endif
+> Desenvolvedor: $if[$getUserVar[cargo-botlist;$serverOwner;$guildID]==]`Não configurado.`$elseif[$getUserVar[cargo-botlist;$serverOwner;$guildID]!=]<@&$getUserVar[cargo-botlist;$serverOwner;$guildID]>$endif
+;1]
+$image[$json[BOT;banner];2]
+$color[$json[BOT;cor];1]
+$color[$json[BOT;cor];2]
+$thumbnail[$userAvatar[$botID];1]
+
+$addButton[no;cargo_bot_em_analise-$authorID;Cargo Bot em Analise;secondary;no;]
+$addButton[no;cargo_bot_analisado-$authorID;Cargo Bot Analisado;secondary;no;]
+$addButton[no;cargo_developer-$authorID;Cargo Desenvolvedor;secondary;no;]
+$addButton[no;bb_voltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
