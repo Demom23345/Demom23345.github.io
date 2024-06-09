@@ -1,5 +1,6 @@
 $var[user;$replaceText[$findUser[$message[2]];@me;$authorID;-1]]
 
+$onlyIf[$message[2]!=;$json[EMOJI;errado] **|** <@$authorID>, você esqueveu de mencionar um usuário.]
 $onlyIf[$isBot[$var[user]]==false;$json[EMOJI;errado] **|** <@$authorID>, o <@$var[user]> não é um desenvolvedor.]
 
 $author[Perfil do Desenvolvedor;1] $authorIcon[$userAvatar[$var[user]];1]
