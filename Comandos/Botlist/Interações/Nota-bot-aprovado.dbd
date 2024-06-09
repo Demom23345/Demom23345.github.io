@@ -49,6 +49,6 @@ $setUserVar[aprovado;true;$getVar[mention;$authorID];$guildID]
 $setUserVar[limit;$sum[$getUserVar[limit;$var[dono];$guildID];1];$var[dono];$guildID]
 
 $changeUsernameWithID[$getVar[mention;$authorID];$cropText[[$getUserVar[prefix;$getVar[mention;$authorID];$guildID]\] $username[$getVar[mention;$authorID]] by: $username[$getUserVar[dono;$getVar[mention;$authorID];$guildID]];29;...]]
-$roleGrant[$getVar[mention;$authorID];+$getServerVar[cargo-bot-verificado]]
+$roleGrant[$getVar[mention;$authorID];+$getUserVar[cargo-botlist;$botID;$guildID]]
 $roleGrant[$var[dono];+$getUserVar[cargo-botlist;$serverOwner;$guildID]]
 $roleGrant[$getVar[mention;$authorID];-$getServerVar[cargo-botlist]]
