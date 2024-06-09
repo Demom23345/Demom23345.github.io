@@ -1,4 +1,4 @@
-$onlyIf[$getServerVar[premium]==Sim.;$json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.]
+$onlyIf[$getServerVar[premium]==Sim.;$ephemeral $json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.]
 
 $if[$getServerVar[anti-ticket]==ON]
 $setServerVar[anti-ticket;OFF]
