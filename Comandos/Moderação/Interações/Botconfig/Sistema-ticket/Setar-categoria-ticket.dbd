@@ -1,1 +1,10 @@
+$ephemeral
+$var[canal;$findChannel[$input[1]]]
+$onlyIf[$channelExists[$var[canal]]==true;$json[EMOJI;errado] **|** <@$authorID>, o canal digitado `$input[1]` não existe, para pegar o ID do canal use `Q?channelinfo`]
+
+$setServerVar[canal-ticket;$var[canal]]
+$suppressErrors[$json[EMOJI;certo] **|** <@$authorID>, canal setado com sucesso!]
+$channelSendMessage[$json[EMOJI;errado] **|** <@$authorID>, o canal `$input[1]` não é um canal valido, para pegar o ID do canal use `Q?categoryinfo`]
+
+
 
