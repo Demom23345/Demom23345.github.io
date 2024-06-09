@@ -3,7 +3,7 @@ $description[> Ola **$username** daqui em diante você vera todos meus comandos 
 $color[$json[BOT;cor]] $thumbnail[$userAvatar[$botID]]
 
 $newSelectMenu[menu;1;1;› Selecione uma categoria]
-$addSelectMenuOption[menu;Botlist ( 7 );botlist-$authorID;;no;$json[EMOJI;bot]]
+$addSelectMenuOption[menu;Botlist ( 6 );botlist-$authorID;;no;$json[EMOJI;bot]]
 $addSelectMenuOption[menu;Economia ( 2 );economia-$authorID;;no;$json[EMOJI;economia]]
 $addSelectMenuOption[menu;Utilidade ( 6 );utilidade-$authorID;;no;$json[EMOJI;utilidade]]
 $addSelectMenuOption[menu;Moderação ( 1 );moderação-$authorID;;no;$json[EMOJI;moderação]]
