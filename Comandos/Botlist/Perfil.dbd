@@ -27,6 +27,7 @@ $addSelectMenuOption[edit-bot;Cor;7-$authorID;Altere a cor do seu perfil;no;$jso
 $addSelectMenuOption[edit-bot;Banner;8-$authorID;Altere o banner que está no seu perfil;no;$json[EMOJI;image]]
 $endif
 $elseif[$isBot[$var[user]]==true]
+$onlyIf[$getUserVar[aprovado;$var[user];$guildID]==true;**$json[EMOJI;errado] |** <@$authorID>, esse bot não foi registrado no meu sistema.]
 $author[Perfil do Bot;1] $authorIcon[$userAvatar[$var[user]];1]
 $description[# [$username[$var[user]]\](https://discord.com/users/$var[user]);1]
 $addField[$json[EMOJI;user] Informações do Bot;
