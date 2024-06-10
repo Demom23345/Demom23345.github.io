@@ -1,8 +1,10 @@
 $if[$and[$isBot[$authorID]==true;$getUserVar[wait;$authorID;$guildID]==true]==true]
+$if[$getUserVar[anti-botlist;$botID;$guildID]==ON]
 
+$elseif[$getUserVar[anti-botlist;$botID;$guildID]==OFF]
 $sendEmbedMessage[$getServerVar[canal-botlist];<@$getUserVar[dono;$authorID;$guildID]>;
 $json[EMOJI;bot] | $nickname[$getUserVar[dono;$authorID;$guildID]] seu Bot Entrou para Análise;;
 >>> O bot **$username#$discriminator[$authorID]** entrou para ser analisado!;#f4fc03;;;$username[$getUserVar[dono;$authorID;$guildID]] | $getUserVar[dono;$authorID;$guildID];$userAvatar[$getUserVar[dono;$authorID;$guildID]];$authorAvatar;;yes;no]
 $roleGrant[$authorID;+$getServerVar[cargo-botlist]]
-
+$endif
 $endif
