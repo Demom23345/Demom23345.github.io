@@ -1,4 +1,4 @@
-$var[user;$findUser[$message[2]]]
+$var[user;$replaceText[$findUser[$message[2]];@me;$authorID;-1]]
 
 $author[Informações de usuário] $authorIcon[$userAvatar[$var[user]]]
 $description[# [$username[$var[user]]\](https://discord.com/users/$var[user])]
