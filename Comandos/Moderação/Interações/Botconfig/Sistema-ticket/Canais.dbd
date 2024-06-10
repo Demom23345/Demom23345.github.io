@@ -1,8 +1,8 @@
 $removeButtons
 $description[# Canais
-> Categoria Ticket: $if[$getServerVar[canal-ticket]==]`Não configurado.`$elseif[$getServerVar[canal-ticket]!=]<#$getServerVar[canal-ticket]>$endif
-> Canal Logs: $if[$getUserVar[canal-ticket;$botID;$guildID]==]`Não configurado.`$elseif[$getUserVar[canal-ticket;$botID;$guildID]!=]<#$getUserVar[canal-ticket;$botID;$guildID]>$endif
-> Canal Avaliações: $if[$getUserVar[canal-ticket;$serverOwner;$guildID]==]`Não configurado.`$elseif[$getUserVar[canal-ticket;$serverOwner;$guildID]!=]<#$getUserVar[canal-ticket;$serverOwner;$guildID]>$endif
+> Categoria Ticket: $if[$json[db-ticket;canais;categoria]==]`Não configurado.`$elseif[$json[db-ticket;canais;categoria]!=]<#$json[db-ticket;canais;categoria]>$endif
+> Canal Logs: $if[$json[db-ticket;canais;logs]==]`Não configurado.`$elseif[$json[db-ticket;canais;logs]!=]<#$json[db-ticket;canais;logs]>$endif
+> Canal Avaliações: $if[$json[db-ticket;canais;avaliačão]==]`Não configurado.`$elseif[$json[db-ticket;canais;avaliação]!=]<#$json[db-ticket;canais;avaliação]>$endif
 ;1]
 $image[$json[BOT;banner];2]
 $color[$json[BOT;cor];1]
