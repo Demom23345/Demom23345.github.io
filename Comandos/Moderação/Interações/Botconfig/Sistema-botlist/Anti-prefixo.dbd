@@ -1,4 +1,6 @@
-$onlyIf[$getServerVar[premium]==Sim.;$ephemeral $json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.]
+$if[$getServerVar[premium]==Não.]
+$ephemeral $removeButtons
+$json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.
 
 $if[$getServerVar[anti-ticket]==ON]
 $setServerVar[anti-ticket;OFF]
@@ -50,4 +52,5 @@ $addButton[no;alto_verificação_on_off-$authorID;Alto Verificação;$if[$getUse
 $addButton[no;topico_on_off-$authorID;Tópico;$if[$getUserVar[anti-botlist;$serverOwner;$guildID]==ON]success$elseif[$getUserVar[anti-botlist;$serverOwner;$guildID]==OFF]danger$endif;no;]
 $addButton[no;bb_voltar-$authorID;Voltar;secondary;no;$json[EMOJI;voltar]]
 
+$endif
 $endif
