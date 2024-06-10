@@ -1,5 +1,6 @@
 $if[$getServerVar[premium]==Não.]
-$ephemeral $json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.
+$ephemeral $removeButtons
+$json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.
 
 $elseif[$getServerVar[premium]==Sim.]
 $if[$getUserVar[anti-botlist;$botID;$guildID]==ON]
