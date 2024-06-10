@@ -2,6 +2,7 @@ $if[$getServerVar[premium]==Não.]
 $ephemeral $removeButtons
 $json[EMOJI;errado] **|** <@$authorID>, o servidor atual não possui **premium** para utilizar essa função.
 
+$elseif[$getServerVar[premium]==Sim.]
 $if[$getServerVar[anti-ticket]==ON]
 $setServerVar[anti-ticket;OFF]
 
