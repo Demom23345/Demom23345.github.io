@@ -6,4 +6,5 @@ $suppressErrors[$json[EMOJI;errado] **|** <@$authorID>, o canal `$input[1]` não
 $channelSendMessage[$var[canal];$json[EMOJI;certo] **|** <@$authorID>, canal setado com sucesso!]
 $json[EMOJI;certo] **|** <@$authorID>, canal setado com sucesso!
 
-$setUserVar[canal-ticket;$var[canal];$serverOwner;$guildID]
+$jsonSet[db-ticket;canais;avaliação;$var[canal]]
+$setServerVar[var-ticket;$optOff[$jsonPretty[4]]]
